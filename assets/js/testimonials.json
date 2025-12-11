@@ -1,0 +1,100 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Andrew Winter",
+      "role": "CEO, Eflex North Carolina",
+      "company": "Eflex",
+      "quote": "ZAS Digital has been instrumental in developing our intelligent energy management system. Their technical expertise, attention to detail, and commitment to quality have exceeded our expectations. The mobile app they built handles complex energy optimization algorithms while maintaining an intuitive user interface.",
+      "project": "Eflex Clean Energy System",
+      "category": "mobile-app",
+      "rating": 5,
+      "date": "2024-03-15",
+      "avatar": "AW"
+    },
+    {
+      "id": 2,
+      "name": "Vignesh",
+      "role": "SCM Group Consultant",
+      "company": "The Chennai Silks",
+      "quote": "The e-commerce platform ZAS Digital built for us transformed our online business. Within 6 months, we saw a 35% increase in online sales. Their team understood our retail business needs perfectly and delivered a solution that works seamlessly across web and mobile platforms.",
+      "project": "The Chennai Silks E-commerce",
+      "category": "web-app",
+      "rating": 5,
+      "date": "2023-11-20",
+      "avatar": "VG"
+    },
+    {
+      "id": 3,
+      "name": "Brand Manager",
+      "role": "Operations Head",
+      "company": "Oliver Brown Australia",
+      "quote": "Our restaurant POS system developed by ZAS Digital has revolutionized our operations. Order processing time reduced by 40%, and the integrated mobile ordering system has significantly improved customer experience. Their team was professional, responsive, and delivered exactly what we needed.",
+      "project": "Oliver Brown Restaurant POS",
+      "category": "web-app",
+      "rating": 5,
+      "date": "2024-06-10",
+      "avatar": "OB"
+    },
+    {
+      "id": 4,
+      "name": "Christopher",
+      "role": "Operations Director",
+      "company": "Logistics Company",
+      "quote": "The Harbour Vessel Management System has digitized 70% of our paperwork and improved operational efficiency dramatically. ZAS Digital's understanding of logistics workflows and their technical execution was impressive. The system handles complex vessel operations with remarkable accuracy.",
+      "project": "Harbour Vessel Management",
+      "category": "web-app",
+      "rating": 4,
+      "date": "2024-01-25",
+      "avatar": "CH"
+    },
+    {
+      "id": 5,
+      "name": "Texas Children's Hospital Team",
+      "role": "IT Department",
+      "company": "Texas Children's Hospital",
+      "quote": "ZAS Digital successfully modernized our patient portal, improving accessibility and user experience while maintaining strict HIPAA compliance. Their work has made it easier for our patients to access medical services and information securely.",
+      "project": "Patient Portal Modernization",
+      "category": "web-app",
+      "rating": 5,
+      "date": "2019-08-30",
+      "avatar": "TCH"
+    },
+    {
+      "id": 6,
+      "name": "Startup CEO",
+      "role": "CEO",
+      "company": "Minneapolis-based Startup",
+      "quote": "The Recall Management System developed by ZAS Digital is a game-changer for consumer safety. Their implementation of OCR technology and real-time government data integration has created a robust system that protects consumers while helping businesses maintain compliance efficiently.",
+      "project": "Recall Management System",
+      "category": "mobile-app",
+      "rating": 5,
+      "date": "2025-02-15",
+      "avatar": "RC"
+    },
+    {
+      "id": 7,
+      "name": "Deepika",
+      "role": "CEO, Practills Learning",
+      "company": "EduHire",
+      "quote": "As a co-founder of EduHire, I've seen firsthand how ZAS Digital's technical expertise and strategic thinking have shaped our teacher recruitment platform. Their ability to understand educational sector needs and translate them into functional technology has been invaluable to our success.",
+      "project": "EduHire Platform",
+      "category": "web-app",
+      "rating": 5,
+      "date": "2024-12-05",
+      "avatar": "DP"
+    },
+    {
+      "id": 8,
+      "name": "Subaru Regional Manager",
+      "role": "Regional Operations Manager",
+      "company": "Subaru",
+      "quote": "Working with ZAS Digital on our dealership management tools has been a positive experience. Their team demonstrates strong technical skills and a good understanding of automotive retail operations.",
+      "project": "Dealership Management System",
+      "category": "web-app",
+      "rating": 4,
+      "date": "2023-09-18",
+      "avatar": "SB"
+    }
+  ]
+}

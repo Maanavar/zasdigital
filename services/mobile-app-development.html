@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" class="agency-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Development | ZAS Digital - Premium iOS & Android Apps</title>
+    <meta name="description" content="Expert mobile app development for iOS and Android. We build high-performance, scalable apps with exceptional user experiences for startups and enterprises.">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satoshi:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mobile App Development | ZAS Digital">
+    <meta property="og:description" content="Premium iOS & Android app development for startups and enterprises.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zasdigital.in/services/mobile-app-development.html">
+    <meta property="og:image" content="https://zasdigital.in/assets/img/mobile-app-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Mobile App Development",
+        "provider": {
+            "@type": "Organization",
+            "name": "ZAS Digital",
+            "url": "https://zasdigital.in"
+        },
+        "description": "Expert mobile app development for iOS and Android platforms including native and cross-platform solutions.",
+        "areaServed": "Worldwide",
+        "offers": {
+            "@type": "Offer",
+            "category": "Mobile Development",
+            "includes": [
+                "iOS App Development",
+                "Android App Development",
+                "React Native Development",
+                "Flutter Development",
+                "App Maintenance & Support"
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="agency-header" id="mainHeader">
+        <nav class="agency-nav" aria-label="Main navigation">
+            <div class="container">
+                <div class="agency-nav__inner">
+                    <a href="/" class="agency-nav__logo">
+                        <span class="agency-nav__logo-text">ZAS</span>
+                        <span class="agency-nav__logo-text--accent">Digital</span>
+                    </a>
+                    
+                    <div class="agency-nav__menu" id="mainMenu">
+                        <ul class="agency-nav__list">
+                            <li class="agency-nav__item">
+                                <a href="/" class="agency-nav__link">Home</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/services/mobile-app-development.html" class="agency-nav__link agency-nav__link--active">Services</a>
+                                <ul class="agency-nav__dropdown">
+                                    <li><a href="/services/mobile-app-development.html">Mobile App Development</a></li>
+                                    <li><a href="/services/web-app-development.html">Web App Development</a></li>
+                                    <li><a href="/services/product-design.html">Product Design</a></li>
+                                    <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                                </ul>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/case-studies.html" class="agency-nav__link">Case Studies</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/about.html" class="agency-nav__link">About</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/contact.html" class="agency-nav__link">Contact</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="agency-nav__actions">
+                            <button class="agency-theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--light">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                                    </svg>
+                                </span>
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--dark">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="agency-nav__toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="agency-hero agency-hero--service">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="agency-hero__content agency-slide-in-up">
+                            <h1 class="agency-hero__title">Premium Mobile App Development</h1>
+                            <p class="agency-hero__subtitle">We craft exceptional iOS and Android applications that deliver outstanding user experiences, drive engagement, and achieve business objectives.</p>
+                            <div class="agency-hero__stats">
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="80">0</span>
+                                    <span class="agency-hero__stat-label">Mobile Apps Built</span>
+                                </div>
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="4.8">4.8★</span>
+                                    <span class="agency-hero__stat-label">Avg. App Store Rating</span>
+                                </div>
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="99.9">99.9%</span>
+                                    <span class="agency-hero__stat-label">Uptime Guarantee</span>
+                                </div>
+                            </div>
+                            <div class="agency-hero__actions mt-4">
+                                <a href="/contact.html" class="agency-btn agency-btn--primary agency-btn--lg">
+                                    Start Your Project
+                                    <span class="agency-btn__icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 10H19M10 1L19 10L10 19"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#process" class="agency-btn agency-btn--outline agency-btn--lg">
+                                    Our Process
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="agency-hero__visual agency-fade-in">
+                            <div class="agency-hero__service-visual">
+                                <div class="agency-hero__device-mockup agency-hero__device-mockup--iphone">
+                                    <div class="agency-hero__device-screen">
+                                        <div class="agency-hero__screen-content">
+                                            <div class="agency-hero__app-ui">
+                                                <div class="agency-hero__app-header"></div>
+                                                <div class="agency-hero__app-content">
+                                                    <div class="agency-hero__app-item agency-hero__app-item--1"></div>
+                                                    <div class="agency-hero__app-item agency-hero__app-item--2"></div>
+                                                    <div class="agency-hero__app-item agency-hero__app-item--3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="agency-hero__device-mockup agency-hero__device-mockup--android">
+                                    <div class="agency-hero__device-screen">
+                                        <div class="agency-hero__screen-content">
+                                            <div class="agency-hero__app-ui">
+                                                <div class="agency-hero__app-header"></div>
+                                                <div class="agency-hero__app-content">
+                                                    <div class="agency-hero__app-item agency-hero__app-item--4"></div>
+                                                    <div class="agency-hero__app-item agency-hero__app-item--5"></div>
+                                                    <div class="agency-hero__app-item agency-hero__app-item--6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agency-hero__bg-gradient"></div>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Our Mobile Development Approach</h2>
+                        <p class="agency-section__subtitle">We combine technical excellence with user-centered design to create mobile experiences that people love</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="agency-approach-card agency-fade-in">
+                            <div class="agency-approach-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <h3 class="agency-approach-card__title">Native Development</h3>
+                            <p class="agency-approach-card__description">Full native iOS (Swift) and Android (Kotlin) development for optimal performance and platform-specific features.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="agency-approach-card agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-approach-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="agency-approach-card__title">Cross-Platform</h3>
+                            <p class="agency-approach-card__description">React Native and Flutter solutions for faster development and code sharing between platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="agency-approach-card agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-approach-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 010 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="agency-approach-card__title">User-Centered Design</h3>
+                            <p class="agency-approach-card__description">Intuitive interfaces, seamless navigation, and delightful interactions that keep users engaged.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="agency-approach-card agency-fade-in" style="animation-delay: 300ms">
+                            <div class="agency-approach-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="agency-approach-card__title">Quality Assurance</h3>
+                            <p class="agency-approach-card__description">Comprehensive testing across devices, networks, and scenarios to ensure flawless performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Offered -->
+        <section class="agency-section agency-section--light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Comprehensive Mobile Solutions</h2>
+                        <p class="agency-section__subtitle">End-to-end mobile development services for every stage of your app journey</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="agency-service-detail-card agency-fade-in">
+                            <div class="agency-service-detail-card__header">
+                                <div class="agency-service-detail-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                        <line x1="12" y1="18" x2="12" y2="18"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-service-detail-card__title">iOS App Development</h3>
+                            </div>
+                            <div class="agency-service-detail-card__body">
+                                <p>Native iOS applications using Swift and SwiftUI, optimized for iPhone, iPad, and Apple ecosystem integration.</p>
+                                <ul class="agency-service-detail-card__features">
+                                    <li>Swift & SwiftUI development</li>
+                                    <li>ARKit and CoreML integration</li>
+                                    <li>Apple Watch & Apple TV apps</li>
+                                    <li>App Store optimization & deployment</li>
+                                    <li>In-app purchases & subscriptions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-service-detail-card agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-service-detail-card__header">
+                                <div class="agency-service-detail-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                        <line x1="12" y1="18" x2="12" y2="18"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-service-detail-card__title">Android App Development</h3>
+                            </div>
+                            <div class="agency-service-detail-card__body">
+                                <p>Native Android applications using Kotlin and Jetpack Compose, built for diverse devices and Android versions.</p>
+                                <ul class="agency-service-detail-card__features">
+                                    <li>Kotlin & Jetpack Compose</li>
+                                    <li>Material Design implementation</li>
+                                    <li>Android Auto & Wear OS</li>
+                                    <li>Google Play Store deployment</li>
+                                    <li>Firebase integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-service-detail-card agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-service-detail-card__header">
+                                <div class="agency-service-detail-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-service-detail-card__title">Cross-Platform Development</h3>
+                            </div>
+                            <div class="agency-service-detail-card__body">
+                                <p>Single codebase solutions with React Native and Flutter for faster development and consistent user experiences.</p>
+                                <ul class="agency-service-detail-card__features">
+                                    <li>React Native with TypeScript</li>
+                                    <li>Flutter with Dart</li>
+                                    <li>Code sharing up to 90%</li>
+                                    <li>Native module integration</li>
+                                    <li>Hot reload for rapid iteration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-service-detail-card agency-fade-in" style="animation-delay: 300ms">
+                            <div class="agency-service-detail-card__header">
+                                <div class="agency-service-detail-card__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-service-detail-card__title">App Maintenance & Support</h3>
+                            </div>
+                            <div class="agency-service-detail-card__body">
+                                <p>Ongoing support, updates, and maintenance to keep your app secure, up-to-date, and performing optimally.</p>
+                                <ul class="agency-service-detail-card__features">
+                                    <li>Regular updates & bug fixes</li>
+                                    <li>Performance optimization</li>
+                                    <li>Security patches & compliance</li>
+                                    <li>Analytics & performance monitoring</li>
+                                    <li>24/7 technical support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Stack -->
+        <section class="agency-section agency-section--dark">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Technology Stack</h2>
+                        <p class="agency-section__subtitle">We use modern, proven technologies to build scalable and maintainable mobile applications</p>
+                    </div>
+                </div>
+                
+                <div class="agency-tech-stack">
+                    <div class="agency-tech-stack__category">
+                        <h3 class="agency-tech-stack__category-title">Native Development</h3>
+                        <div class="agency-tech-stack__items">
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#F05138" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Swift / SwiftUI</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#34A853" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Kotlin</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#1976D2" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Jetpack Compose</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-tech-stack__category">
+                        <h3 class="agency-tech-stack__category-title">Cross-Platform</h3>
+                        <div class="agency-tech-stack__items">
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#61DAFB" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">React Native</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#02569B" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Flutter</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#3178C6" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-tech-stack__category">
+                        <h3 class="agency-tech-stack__category-title">Backend & APIs</h3>
+                        <div class="agency-tech-stack__items">
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#FF6D00" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Node.js</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#239120" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">Firebase</span>
+                            </div>
+                            <div class="agency-tech-stack__item">
+                                <div class="agency-tech-stack__item-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#00A98F" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <span class="agency-tech-stack__item-name">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="agency-section" id="process">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Our Mobile Development Process</h2>
+                        <p class="agency-section__subtitle">A proven methodology that ensures successful delivery of your mobile application</p>
+                    </div>
+                </div>
+                
+                <div class="agency-process-timeline">
+                    <div class="agency-process-timeline__item agency-fade-in">
+                        <div class="agency-process-timeline__phase">
+                            <span class="agency-process-timeline__phase-number">01</span>
+                            <h3 class="agency-process-timeline__phase-title">Discovery & Strategy</h3>
+                        </div>
+                        <div class="agency-process-timeline__content">
+                            <p>We start by understanding your business objectives, target audience, and market landscape to define the perfect mobile strategy.</p>
+                            <ul class="agency-process-timeline__activities">
+                                <li>Requirements gathering</li>
+                                <li>Competitor analysis</li>
+                                <li>Technical feasibility study</li>
+                                <li>Project roadmap creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-process-timeline__item agency-fade-in" style="animation-delay: 100ms">
+                        <div class="agency-process-timeline__phase">
+                            <span class="agency-process-timeline__phase-number">02</span>
+                            <h3 class="agency-process-timeline__phase-title">UI/UX Design</h3>
+                        </div>
+                        <div class="agency-process-timeline__content">
+                            <p>Our designers create intuitive, beautiful interfaces that provide exceptional user experiences across all devices.</p>
+                            <ul class="agency-process-timeline__activities">
+                                <li>Wireframing & prototyping</li>
+                                <li>UI design system</li>
+                                <li>User testing & validation</li>
+                                <li>Design handoff</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-process-timeline__item agency-fade-in" style="animation-delay: 200ms">
+                        <div class="agency-process-timeline__phase">
+                            <span class="agency-process-timeline__phase-number">03</span>
+                            <h3 class="agency-process-timeline__phase-title">Development</h3>
+                        </div>
+                        <div class="agency-process-timeline__content">
+                            <p>Our developers build your app using agile methodology with continuous integration and regular progress updates.</p>
+                            <ul class="agency-process-timeline__activities">
+                                <li>Architecture planning</li>
+                                <li>Sprint-based development</li>
+                                <li>API integration</li>
+                                <li>Code review & optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-process-timeline__item agency-fade-in" style="animation-delay: 300ms">
+                        <div class="agency-process-timeline__phase">
+                            <span class="agency-process-timeline__phase-number">04</span>
+                            <h3 class="agency-process-timeline__phase-title">Testing & QA</h3>
+                        </div>
+                        <div class="agency-process-timeline__content">
+                            <p>Comprehensive testing across devices, networks, and scenarios to ensure flawless performance and user experience.</p>
+                            <ul class="agency-process-timeline__activities">
+                                <li>Functional testing</li>
+                                <li>Performance testing</li>
+                                <li>Security testing</li>
+                                <li>Beta testing & feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-process-timeline__item agency-fade-in" style="animation-delay: 400ms">
+                        <div class="agency-process-timeline__phase">
+                            <span class="agency-process-timeline__phase-number">05</span>
+                            <h3 class="agency-process-timeline__phase-title">Deployment & Support</h3>
+                        </div>
+                        <div class="agency-process-timeline__content">
+                            <p>We guide you through app store submission and provide ongoing support to ensure long-term success.</p>
+                            <ul class="agency-process-timeline__activities">
+                                <li>App store submission</li>
+                                <li>Post-launch monitoring</li>
+                                <li>Performance optimization</li>
+                                <li>Maintenance & updates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study Preview -->
+        <section class="agency-section agency-section--light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <h2 class="agency-section__title">Mobile App Success Stories</h2>
+                        <p class="agency-section__subtitle">See how we've helped clients achieve their mobile app goals</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="/case-studies.html" class="agency-link agency-link--primary">
+                            View all case studies
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 8H15M8 1L15 8L8 15"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="agency-case-preview agency-fade-in">
+                            <div class="agency-case-preview__header">
+                                <span class="agency-case-preview__category">FinTech</span>
+                                <h3 class="agency-case-preview__title">Global Banking Platform</h3>
+                            </div>
+                            <div class="agency-case-preview__content">
+                                <p>Built a secure mobile banking app serving 500,000+ users with 99.9% uptime and 4.8★ rating.</p>
+                                <div class="agency-case-preview__results">
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">40%</span>
+                                        <span class="agency-case-preview__result-label">Faster transactions</span>
+                                    </div>
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">500K+</span>
+                                        <span class="agency-case-preview__result-label">Active users</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-case-preview__link">Read case study</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="agency-case-preview agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-case-preview__header">
+                                <span class="agency-case-preview__category">HealthTech</span>
+                                <h3 class="agency-case-preview__title">Telemedicine App</h3>
+                            </div>
+                            <div class="agency-case-preview__content">
+                                <p>Developed HIPAA-compliant telemedicine platform connecting patients with healthcare providers.</p>
+                                <div class="agency-case-preview__results">
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">75%</span>
+                                        <span class="agency-case-preview__result-label">Faster consultations</span>
+                                    </div>
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">4.9★</span>
+                                        <span class="agency-case-preview__result-label">User rating</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-case-preview__link">Read case study</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="agency-case-preview agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-case-preview__header">
+                                <span class="agency-case-preview__category">E-commerce</span>
+                                <h3 class="agency-case-preview__title">Fashion Retail App</h3>
+                            </div>
+                            <div class="agency-case-preview__content">
+                                <p>Redesigned mobile shopping experience leading to 35% increase in conversions and user retention.</p>
+                                <div class="agency-case-preview__results">
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">35%</span>
+                                        <span class="agency-case-preview__result-label">Conversion increase</span>
+                                    </div>
+                                    <div class="agency-case-preview__result">
+                                        <span class="agency-case-preview__result-value">-28%</span>
+                                        <span class="agency-case-preview__result-label">Bounce rate</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-case-preview__link">Read case study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Frequently Asked Questions</h2>
+                        <p class="agency-section__subtitle">Common questions about our mobile app development process</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="agency-faq">
+                            <div class="agency-faq__item agency-fade-in">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>What's the difference between native and cross-platform development?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>Native apps are built specifically for iOS (Swift) or Android (Kotlin), offering optimal performance and access to all device features. Cross-platform apps use frameworks like React Native or Flutter to share code between platforms, reducing development time and cost while maintaining good performance. We help you choose the right approach based on your specific requirements, timeline, and budget.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 100ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>How long does it take to develop a mobile app?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>Development time varies based on complexity, features, and platform selection. Simple apps typically take 2-3 months, medium complexity apps 3-6 months, and enterprise-level solutions 6+ months. During discovery, we provide a detailed timeline based on your specific requirements. We use agile methodology with 2-week sprints, providing regular updates and opportunities for feedback.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 200ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>What's included in your maintenance package?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>Our maintenance packages include regular updates for operating system compatibility, bug fixes, performance optimization, security patches, 24/7 monitoring, analytics reporting, and technical support. We offer tiered packages from basic maintenance to full-service support including feature updates and enhancements. All packages include app store compliance updates and emergency support.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 300ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>How do you handle app store submission?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>We handle the entire app store submission process including preparing all required assets (screenshots, descriptions, icons), configuring app store listings, managing developer accounts, ensuring compliance with guidelines, and submitting to both Apple App Store and Google Play Store. We've developed relationships with app review teams and maintain a 95% first-time approval rate. We also provide post-launch ASO (App Store Optimization) services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="agency-section agency-section--cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Ready to Build Your Mobile App?</h2>
+                        <p class="agency-section__subtitle">Let's discuss your mobile app project and create a custom solution that drives your business forward.</p>
+                        <div class="agency-cta__actions">
+                            <a href="/contact.html" class="agency-btn agency-btn--accent agency-btn--lg">
+                                Start Your Project
+                                <span class="agency-btn__icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="tel:+15551234567" class="agency-btn agency-btn--outline agency-btn--lg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V16a2 2 0 01-2 2h-1C9.716 18 3 11.284 3 4V3z"/>
+                                </svg>
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agency-cta__bg-pattern"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="agency-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="agency-footer__brand">
+                        <a href="/" class="agency-footer__logo">
+                            <span class="agency-footer__logo-text">ZAS</span>
+                            <span class="agency-footer__logo-text--accent">Digital</span>
+                        </a>
+                        <p class="agency-footer__description">We craft high-performance digital experiences for global enterprises and innovative startups.</p>
+                        <div class="agency-footer__social">
+                            <a href="https://linkedin.com/company/zasdigital" class="agency-footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/zasdigital" class="agency-footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/zasdigital" class="agency-footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://dribbble.com/zasdigital" class="agency-footer__social-link" aria-label="Dribbble" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m-3.1-15.99c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-9.94 0-2.58.64-5.01 2.01-7.44 6.32"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Company</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/case-studies.html">Case Studies</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Services</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/services/mobile-app-development.html">Mobile Apps</a></li>
+                        <li><a href="/services/web-app-development.html">Web Apps</a></li>
+                        <li><a href="/services/product-design.html">Product Design</a></li>
+                        <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="agency-footer__heading">Contact</h3>
+                    <address class="agency-footer__contact">
+                        <p class="agency-footer__contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:hello@zasdigital.in">hello@zasdigital.in</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Office</strong>
+                            <span>123 Tech Street, San Francisco, CA 94107</span>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="agency-footer__bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="agency-footer__copyright">© 2025 ZAS Digital. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="agency-footer__legal">
+                            <a href="/privacy-policy.html">Privacy Policy</a>
+                            <a href="/terms.html">Terms of Service</a>
+                            <a href="/cookies.html">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/services.js" defer></script>
+</body>
+</html>

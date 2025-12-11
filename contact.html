@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="agency-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ZAS Digital | Get in Touch for Your Digital Project</title>
+    <meta name="description" content="Ready to start your next digital project? Contact ZAS Digital for expert consultation on mobile apps, web development, product design, and growth strategies.">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satoshi:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact ZAS Digital | Premium Tech Agency">
+    <meta property="og:description" content="Get in touch for expert consultation on your digital project needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zasdigital.in/contact">
+    <meta property="og:image" content="https://zasdigital.in/assets/img/contact-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact ZAS Digital",
+        "description": "Contact page for ZAS Digital technology agency",
+        "url": "https://zasdigital.in/contact",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "Customer Service",
+            "email": "hello@zasdigital.in",
+            "availableLanguage": ["English"],
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="agency-header" id="mainHeader">
+        <nav class="agency-nav" aria-label="Main navigation">
+            <div class="container">
+                <div class="agency-nav__inner">
+                    <a href="/" class="agency-nav__logo">
+                        <span class="agency-nav__logo-text">ZAS</span>
+                        <span class="agency-nav__logo-text--accent">Digital</span>
+                    </a>
+                    
+                    <div class="agency-nav__menu" id="mainMenu">
+                        <ul class="agency-nav__list">
+                            <li class="agency-nav__item">
+                                <a href="/" class="agency-nav__link">Home</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/services/mobile-app-development.html" class="agency-nav__link">Services</a>
+                                <ul class="agency-nav__dropdown">
+                                    <li><a href="/services/mobile-app-development.html">Mobile App Development</a></li>
+                                    <li><a href="/services/web-app-development.html">Web App Development</a></li>
+                                    <li><a href="/services/product-design.html">Product Design</a></li>
+                                    <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                                </ul>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/case-studies.html" class="agency-nav__link">Case Studies</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/about.html" class="agency-nav__link">About</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/contact.html" class="agency-nav__link agency-nav__link--active">Contact</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="agency-nav__actions">
+                            <button class="agency-theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--light">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                                    </svg>
+                                </span>
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--dark">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Toggle Button -->
+                    <button class="agency-nav__toggle" id="menuToggle" aria-label="Open mobile menu" aria-expanded="false">
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Contact Hero -->
+        <section class="agency-hero agency-hero--contact" role="banner" aria-label="Contact hero">
+            <div class="container">
+                <div class="agency-hero__content-wrapper">
+                    <div class="agency-hero__content agency-slide-in-up">
+                        <h1 class="agency-hero__title">Let's Build Something Exceptional Together</h1>
+                        <p class="agency-hero__subtitle">Ready to transform your digital vision into reality? Share your project details, and our team will get back to you within 24 hours with a tailored strategy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agency-hero__bg-gradient" aria-hidden="true"></div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="agency-contact-form-wrapper">
+                            <form class="agency-contact-form agency-contact-form--enhanced" id="contactForm" novalidate>
+                                <div class="agency-form-header">
+                                    <h3 class="agency-form-header__title">Project Inquiry</h3>
+                                    <p class="agency-form-header__description">Please provide detailed information about your project needs</p>
+                                </div>
+                                
+                                <div class="agency-form-grid">
+                                    <div class="agency-form-group">
+                                        <label for="firstName" class="agency-form-label">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" class="agency-form-input" required>
+                                        <div class="agency-form-error" id="firstNameError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group">
+                                        <label for="lastName" class="agency-form-label">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" class="agency-form-input" required>
+                                        <div class="agency-form-error" id="lastNameError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group">
+                                        <label for="email" class="agency-form-label">Email Address *</label>
+                                        <input type="email" id="email" name="email" class="agency-form-input" required>
+                                        <div class="agency-form-error" id="emailError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group">
+                                        <label for="phone" class="agency-form-label">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="agency-form-input">
+                                        <div class="agency-form-error" id="phoneError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="company" class="agency-form-label">Company / Organization</label>
+                                        <input type="text" id="company" name="company" class="agency-form-input">
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="projectType" class="agency-form-label">Project Type *</label>
+                                        <div class="agency-form-select-wrapper">
+                                            <select id="projectType" name="projectType" class="agency-form-select" required>
+                                                <option value="">Select project type</option>
+                                                <option value="mobile-app">Mobile App Development</option>
+                                                <option value="web-app">Web App Development</option>
+                                                <option value="product-design">Product Design</option>
+                                                <option value="seo-growth">SEO & Growth Strategy</option>
+                                                <option value="multiple">Multiple Services</option>
+                                                <option value="consultation">Technical Consultation</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <svg class="agency-form-select-arrow" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <div class="agency-form-error" id="projectTypeError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="budget" class="agency-form-label">Project Budget *</label>
+                                        <div class="agency-form-radio-group">
+                                            <label class="agency-form-radio">
+                                                <input type="radio" name="budget" value="5k-15k" required>
+                                                <span class="agency-form-radio__label">$5K - $15K</span>
+                                            </label>
+                                            <label class="agency-form-radio">
+                                                <input type="radio" name="budget" value="15k-50k">
+                                                <span class="agency-form-radio__label">$15K - $50K</span>
+                                            </label>
+                                            <label class="agency-form-radio">
+                                                <input type="radio" name="budget" value="50k-100k">
+                                                <span class="agency-form-radio__label">$50K - $100K</span>
+                                            </label>
+                                            <label class="agency-form-radio">
+                                                <input type="radio" name="budget" value="100k+">
+                                                <span class="agency-form-radio__label">$100K+</span>
+                                            </label>
+                                            <label class="agency-form-radio">
+                                                <input type="radio" name="budget" value="undecided">
+                                                <span class="agency-form-radio__label">Undecided</span>
+                                            </label>
+                                        </div>
+                                        <div class="agency-form-error" id="budgetError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="timeline" class="agency-form-label">Project Timeline *</label>
+                                        <div class="agency-form-range">
+                                            <input type="range" id="timeline" name="timeline" min="1" max="12" value="6" class="agency-form-range__input">
+                                            <div class="agency-form-range__labels">
+                                                <span>1 Month</span>
+                                                <span id="timelineValue">6 Months</span>
+                                                <span>12+ Months</span>
+                                            </div>
+                                        </div>
+                                        <div class="agency-form-error" id="timelineError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="message" class="agency-form-label">Project Details *</label>
+                                        <textarea id="message" name="message" class="agency-form-textarea" rows="6" placeholder="Please describe your project goals, requirements, challenges, and any other relevant details..." required></textarea>
+                                        <div class="agency-form-char-count">
+                                            <span id="charCount">0</span> / 2000 characters
+                                        </div>
+                                        <div class="agency-form-error" id="messageError"></div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label for="file" class="agency-form-label">Upload Documents (Optional)</label>
+                                        <div class="agency-form-file">
+                                            <input type="file" id="file" name="file" class="agency-form-file__input" accept=".pdf,.doc,.docx,.jpg,.png,.zip">
+                                            <label for="file" class="agency-form-file__label">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                                    <polyline points="17 8 12 3 7 8"/>
+                                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                                </svg>
+                                                <span class="agency-form-file__text">Choose file or drag & drop here</span>
+                                                <span class="agency-form-file__hint">Max file size: 10MB</span>
+                                            </label>
+                                            <div class="agency-form-file__preview" id="filePreview"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <label class="agency-form-checkbox">
+                                            <input type="checkbox" name="newsletter" checked>
+                                            <span class="agency-form-checkbox__label">Subscribe to our newsletter for updates and insights</span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="agency-form-group agency-form-group--full">
+                                        <div class="agency-form-submit">
+                                            <button type="submit" class="agency-btn agency-btn--primary agency-btn--lg agency-btn--full" id="submitButton">
+                                                <span class="agency-btn__text">Submit Inquiry</span>
+                                                <span class="agency-btn__loader" aria-hidden="true"></span>
+                                            </button>
+                                            <p class="agency-form-submit__note">By submitting this form, you agree to our <a href="/privacy-policy.html">Privacy Policy</a>. We'll respond within 24 hours.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <div class="agency-form-success" id="formSuccess" hidden>
+                                <div class="agency-form-success__icon">
+                                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-form-success__title">Thank You!</h3>
+                                <p class="agency-form-success__message">Your inquiry has been successfully submitted. Our team will review your project details and get back to you within 24 hours.</p>
+                                <p class="agency-form-success__confirmation">A confirmation email has been sent to <span id="confirmationEmail"></span></p>
+                                <div class="agency-form-success__actions">
+                                    <button type="button" class="agency-btn agency-btn--outline" id="submitAnother">Submit Another Inquiry</button>
+                                    <a href="/" class="agency-btn agency-btn--primary">Return to Homepage</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="agency-section agency-section--light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Frequently Asked Questions</h2>
+                        <p class="agency-section__subtitle">Common questions about working with ZAS Digital</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="agency-faq">
+                            <div class="agency-faq-item agency-fade-in">
+                                <button class="agency-faq-item__question" aria-expanded="false">
+                                    <span class="agency-faq-item__text">What happens after I submit the contact form?</span>
+                                    <span class="agency-faq-item__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="agency-faq-item__answer" aria-hidden="true">
+                                    <p>Within 24 hours of submitting your form, our project manager will contact you to schedule a discovery call. During this call, we'll discuss your project in detail, understand your requirements, and answer any questions you might have. Following the call, we'll prepare a tailored proposal with project scope, timeline, and cost estimate.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq-item agency-fade-in" style="animation-delay: 50ms">
+                                <button class="agency-faq-item__question" aria-expanded="false">
+                                    <span class="agency-faq-item__text">What is your typical project timeline?</span>
+                                    <span class="agency-faq-item__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="agency-faq-item__answer" aria-hidden="true">
+                                    <p>Project timelines vary based on complexity and scope. Typically:</p>
+                                    <ul>
+                                        <li><strong>MVP Mobile Apps:</strong> 3-6 months</li>
+                                        <li><strong>Web Applications:</strong> 2-4 months</li>
+                                        <li><strong>Product Design Sprints:</strong> 4-8 weeks</li>
+                                        <li><strong>Enterprise Solutions:</strong> 6-12+ months</li>
+                                    </ul>
+                                    <p>We follow agile methodologies and provide weekly progress updates throughout the project.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq-item agency-fade-in" style="animation-delay: 100ms">
+                                <button class="agency-faq-item__question" aria-expanded="false">
+                                    <span class="agency-faq-item__text">Do you offer ongoing maintenance and support?</span>
+                                    <span class="agency-faq-item__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="agency-faq-item__answer" aria-hidden="true">
+                                    <p>Yes, we offer comprehensive maintenance and support packages tailored to your needs. Our support services include:</p>
+                                    <ul>
+                                        <li>Bug fixes and technical support</li>
+                                        <li>Performance monitoring and optimization</li>
+                                        <li>Security updates and patches</li>
+                                        <li>Feature enhancements and updates</li>
+                                        <li>Infrastructure management</li>
+                                        <li>24/7 emergency support (premium tier)</li>
+                                    </ul>
+                                    <p>We can discuss specific support requirements during our discovery call.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq-item agency-fade-in" style="animation-delay: 150ms">
+                                <button class="agency-faq-item__question" aria-expanded="false">
+                                    <span class="agency-faq-item__text">What industries do you specialize in?</span>
+                                    <span class="agency-faq-item__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="agency-faq-item__answer" aria-hidden="true">
+                                    <p>We have extensive experience across multiple industries, including:</p>
+                                    <div class="agency-industry-tags">
+                                        <span class="agency-industry-tag">FinTech & Banking</span>
+                                        <span class="agency-industry-tag">Healthcare & MedTech</span>
+                                        <span class="agency-industry-tag">E-commerce & Retail</span>
+                                        <span class="agency-industry-tag">Education & EdTech</span>
+                                        <span class="agency-industry-tag">SaaS & Enterprise</span>
+                                        <span class="agency-industry-tag">Travel & Hospitality</span>
+                                        <span class="agency-industry-tag">Media & Entertainment</span>
+                                        <span class="agency-industry-tag">Manufacturing & Logistics</span>
+                                    </div>
+                                    <p>Our cross-industry experience allows us to bring best practices and innovative solutions to each project.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq-item agency-fade-in" style="animation-delay: 200ms">
+                                <button class="agency-faq-item__question" aria-expanded="false">
+                                    <span class="agency-faq-item__text">How do you ensure project quality and success?</span>
+                                    <span class="agency-faq-item__icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M6 9l6 6 6-6"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="agency-faq-item__answer" aria-hidden="true">
+                                    <p>We follow a rigorous quality assurance process:</p>
+                                    <ul>
+                                        <li><strong>Technical Excellence:</strong> Code reviews, automated testing, and performance optimization</li>
+                                        <li><strong>User-Centered Design:</strong> User testing, A/B testing, and usability analysis</li>
+                                        <li><strong>Project Management:</strong> Agile methodology with regular sprints and reviews</li>
+                                        <li><strong>Communication:</strong> Weekly status reports, demo sessions, and transparent communication</li>
+                                        <li><strong>Security:</strong> Security audits, penetration testing, and compliance checks</li>
+                                        <li><strong>Deployment:</strong> CI/CD pipelines, staging environments, and rollback procedures</li>
+                                    </ul>
+                                    <p>Our success rate is 98% for projects delivered on time and within budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="agency-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="agency-footer__brand">
+                        <a href="/" class="agency-footer__logo">
+                            <span class="agency-footer__logo-text">ZAS</span>
+                            <span class="agency-footer__logo-text--accent">Digital</span>
+                        </a>
+                        <p class="agency-footer__description">We craft high-performance digital experiences for global enterprises and innovative startups.</p>
+                        <div class="agency-footer__social">
+                            <a href="https://linkedin.com/company/zasdigital" class="agency-footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/zasdigital" class="agency-footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/zasdigital" class="agency-footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://dribbble.com/zasdigital" class="agency-footer__social-link" aria-label="Dribbble" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m-3.1-15.99c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-9.94 0-2.58.64-5.01 2.01-7.44 6.32"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Company</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/case-studies.html">Case Studies</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Services</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/services/mobile-app-development.html">Mobile Apps</a></li>
+                        <li><a href="/services/web-app-development.html">Web Apps</a></li>
+                        <li><a href="/services/product-design.html">Product Design</a></li>
+                        <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="agency-footer__heading">Contact</h3>
+                    <address class="agency-footer__contact">
+                        <p class="agency-footer__contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:hello@zasdigital.in">hello@zasdigital.in</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Office</strong>
+                            <span>123 Tech Street, San Francisco, CA 94107</span>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="agency-footer__bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="agency-footer__copyright">© 2025 ZAS Digital. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="agency-footer__legal">
+                            <a href="/privacy-policy.html">Privacy Policy</a>
+                            <a href="/terms.html">Terms of Service</a>
+                            <a href="/cookies.html">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/contact.js" defer></script>
+    
+    <!-- Analytics Placeholder -->
+    <!-- 
+    <script>
+        // Privacy-friendly analytics placeholder
+        // Replace with your actual analytics code
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            anonymize_ip: true,
+            allow_ad_personalization_signals: false
+        });
+    </script>
+    -->
+</body>
+</html>

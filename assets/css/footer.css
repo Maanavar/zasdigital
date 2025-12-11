@@ -1,0 +1,209 @@
+/* 
+ * ZAS Digital - Footer Component
+ * Modern footer with contact info and links
+ * Version: 3.0.0 - 2025 Modern Edition
+ */
+
+.agency-footer {
+  background: linear-gradient(to top, 
+    var(--color-tech-dark), 
+    color-mix(in srgb, var(--color-tech-dark) 90%, var(--color-tech-gray)));
+  color: var(--color-white);
+  padding: var(--space-5xl) 0 var(--space-3xl);
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.agency-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--color-primary), 
+    var(--color-accent), 
+    transparent);
+}
+
+.agency-theme-light .agency-footer {
+  background: linear-gradient(to top, 
+    var(--color-surface), 
+    color-mix(in srgb, var(--color-surface) 90%, white));
+  border-top: 1px solid var(--color-border);
+}
+
+/* Footer Logo */
+.agency-footer__logo {
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.agency-footer__logo-text {
+  color: var(--color-white);
+}
+
+.agency-footer__logo-text--accent {
+  color: var(--color-primary);
+}
+
+.agency-theme-light .agency-footer__logo-text {
+  color: var(--color-tech-dark);
+}
+
+.agency-footer__description {
+  color: var(--color-muted);
+  margin-bottom: var(--space-lg);
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+/* Footer Social */
+.agency-footer__social {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.agency-footer__social-link {
+  color: var(--color-white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all var(--transition-fast);
+  font-size: var(--fs-small);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.agency-footer__social-link:hover {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
+.agency-theme-light .agency-footer__social-link {
+  color: var(--color-text);
+}
+
+/* Footer Headings */
+.agency-footer__heading {
+  font-size: var(--fs-body);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-lg);
+  color: var(--color-white);
+}
+
+.agency-theme-light .agency-footer__heading {
+  color: var(--color-tech-dark);
+}
+
+/* Footer Links */
+.agency-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agency-footer__links li {
+  margin-bottom: var(--space-sm);
+}
+
+.agency-footer__links a {
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  font-size: var(--fs-body);
+}
+
+.agency-footer__links a:hover {
+  color: var(--color-primary);
+}
+
+/* Footer Contact */
+.agency-footer__contact {
+  font-style: normal;
+}
+
+.agency-footer__contact-item {
+  margin-bottom: var(--space-lg);
+}
+
+.agency-footer__contact-item strong {
+  display: block;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.agency-theme-light .agency-footer__contact-item strong {
+  color: var(--color-tech-dark);
+}
+
+.agency-footer__contact-item a,
+.agency-footer__contact-item span {
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  display: block;
+}
+
+.agency-footer__contact-item a:hover {
+  color: var(--color-primary);
+}
+
+/* Footer Bottom */
+.agency-footer__bottom {
+  margin-top: var(--space-4xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.agency-footer__copyright {
+  color: var(--color-muted);
+  font-size: var(--fs-small);
+}
+
+.agency-footer__legal {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: flex-end;
+}
+
+.agency-footer__legal a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: var(--fs-small);
+  transition: color var(--transition-fast);
+}
+
+.agency-footer__legal a:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive Footer */
+@media (max-width: 991.98px) {
+  .agency-footer__legal {
+    justify-content: flex-start;
+    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .agency-footer {
+    padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+  
+  .agency-footer__contact-item {
+    margin-bottom: var(--space-md);
+  }
+}

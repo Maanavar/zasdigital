@@ -1,0 +1,164 @@
+/* 
+ * ZAS Digital - Main CSS Import File
+ * Import all CSS modules
+ * Version: 3.0.0 - 2025 Modern Edition
+ */
+
+/* Core Base Styles */
+@import url('base.css');
+
+/* Component Styles */
+@import url('header.css');
+@import url('footer.css');
+@import url('components.css');
+
+/* Utility Classes */
+@import url('utilities.css');
+
+/* Page-specific Styles */
+@import url('pages/home.css');
+@import url('pages/about.css');
+@import url('pages/contact.css');
+@import url('pages/case-studies.css');
+
+/* Service Page Styles */
+@import url('pages/services/web-app-development.css');
+@import url('pages/services/mobile-app-development.css');
+@import url('pages/services/seo-growth.css');
+@import url('pages/services/product-design.css');
+
+
+/* ============================================
+   RESPONSIVE FIXES
+   ============================================ */
+
+/* Button Responsive Fixes */
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .agency-hero__actions .agency-btn {
+    width: auto !important;
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Better mobile button sizing */
+  .agency-btn {
+    padding: 1rem 1.5rem;
+    min-height: 52px;
+    font-size: 1rem;
+  }
+  
+  .agency-hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .agency-hero__actions .agency-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  /* Better touch targets */
+  .agency-btn--lg {
+    padding: 1.125rem 2rem;
+    min-height: 60px;
+  }
+  
+  .agency-btn--sm {
+    padding: 0.75rem 1.25rem;
+    min-height: 44px;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 375px) {
+  .agency-hero__actions .agency-btn {
+    max-width: 260px;
+  }
+  
+  /* Single column layout for very small case study grid */
+  .agency-hero__case-study-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 200px;
+  }
+}
+
+/* Form input mobile fixes */
+@media (max-width: 767.98px) {
+  .agency-contact-form__input,
+  .agency-contact-form__select {
+    padding: 0.875rem var(--space-md);
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+  
+  .agency-contact-form__textarea {
+    min-height: 140px;
+    font-size: 16px;
+  }
+}
+
+/* Navigation mobile fixes */
+@media (max-width: 767.98px) {
+  .agency-theme-toggle,
+  .agency-nav__toggle {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .agency-nav__actions {
+    gap: var(--space-sm);
+  }
+}
+
+/* Service cards mobile fixes */
+@media (max-width: 767.98px) {
+  .agency-service-card__icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: var(--space-md);
+  }
+  
+  .agency-service-card__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .agency-service-card {
+    padding: var(--space-xl);
+  }
+}
+
+/* Prevent text from being too small */
+@media (max-width: 575.98px) {
+  .agency-btn,
+  .agency-link {
+    font-size: 1rem;
+  }
+  
+  .agency-section__title {
+    font-size: clamp(1.5rem, 1.2rem + 1vw, 1.75rem);
+  }
+}
+
+.agency-header {
+    height: auto;
+    min-height: 80px;
+    --header-height: 80px;
+}
+
+@media (min-width: 768px) {
+    .agency-header {
+        --header-height: 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .agency-header {
+        --header-height: 100px;
+    }
+}
+
+main {
+    padding-top: var(--header-height, 80px);
+}

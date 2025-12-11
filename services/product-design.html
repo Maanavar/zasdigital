@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en" class="agency-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design | ZAS Digital - Premium UX/UI Design & Design Systems</title>
+    <meta name="description" content="Expert product design services including UX research, UI design, design systems, and prototyping. We create intuitive, beautiful digital products that users love.">
+    
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Satoshi:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Product Design | ZAS Digital">
+    <meta property="og:description" content="Premium UX/UI design, design systems, and prototyping services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zasdigital.in/services/product-design.html">
+    <meta property="og:image" content="https://zasdigital.in/assets/img/product-design-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Product Design",
+        "provider": {
+            "@type": "Organization",
+            "name": "ZAS Digital",
+            "url": "https://zasdigital.in"
+        },
+        "description": "Expert product design services including UX research, UI design, design systems, and prototyping for digital products.",
+        "areaServed": "Worldwide",
+        "offers": {
+            "@type": "Offer",
+            "category": "Design Services",
+            "includes": [
+                "UX Research & Strategy",
+                "UI/UX Design",
+                "Design Systems",
+                "Prototyping & Testing",
+                "Design Audit & Optimization"
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <header class="agency-header" id="mainHeader">
+        <nav class="agency-nav" aria-label="Main navigation">
+            <div class="container">
+                <div class="agency-nav__inner">
+                    <a href="/" class="agency-nav__logo">
+                        <span class="agency-nav__logo-text">ZAS</span>
+                        <span class="agency-nav__logo-text--accent">Digital</span>
+                    </a>
+                    
+                    <div class="agency-nav__menu" id="mainMenu">
+                        <ul class="agency-nav__list">
+                            <li class="agency-nav__item">
+                                <a href="/" class="agency-nav__link">Home</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/services/mobile-app-development.html" class="agency-nav__link">Services</a>
+                                <ul class="agency-nav__dropdown">
+                                    <li><a href="/services/mobile-app-development.html">Mobile App Development</a></li>
+                                    <li><a href="/services/web-app-development.html">Web App Development</a></li>
+                                    <li><a href="/services/product-design.html" class="agency-nav__link--active">Product Design</a></li>
+                                    <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                                </ul>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/case-studies.html" class="agency-nav__link">Case Studies</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/about.html" class="agency-nav__link">About</a>
+                            </li>
+                            <li class="agency-nav__item">
+                                <a href="/contact.html" class="agency-nav__link">Contact</a></li>
+                        </ul>
+                        
+                        <div class="agency-nav__actions">
+                            <button class="agency-theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--light">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                                    </svg>
+                                </span>
+                                <span class="agency-theme-toggle__icon agency-theme-toggle__icon--dark">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="agency-nav__toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                        <span class="agency-nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="agency-hero agency-hero--service">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="agency-hero__content agency-slide-in-up">
+                            <h1 class="agency-hero__title">Premium Product Design</h1>
+                            <p class="agency-hero__subtitle">We craft intuitive, beautiful digital products that users love. Our human-centered design process creates experiences that drive engagement and business growth.</p>
+                            <div class="agency-hero__stats">
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="15">0</span>
+                                    <span class="agency-hero__stat-label">Products Designed</span>
+                                </div>
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="40">40%</span>
+                                    <span class="agency-hero__stat-label">Avg. Engagement Increase</span>
+                                </div>
+                                <div class="agency-hero__stat">
+                                    <span class="agency-hero__stat-number" data-count="4.9">4.9★</span>
+                                    <span class="agency-hero__stat-label">Client Satisfaction</span>
+                                </div>
+                            </div>
+                            <div class="agency-hero__actions mt-4">
+                                <a href="/contact.html" class="agency-btn agency-btn--primary agency-btn--lg">
+                                    Design Project
+                                    <span class="agency-btn__icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 10H19M10 1L19 10L10 19"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#process" class="agency-btn agency-btn--outline agency-btn--lg">
+                                    Our Design Process
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="agency-hero__visual agency-fade-in">
+                            <div class="agency-hero__design-visual">
+                                <div class="agency-hero__design-canvas">
+                                    <div class="agency-hero__design-layers">
+                                        <div class="agency-hero__design-layer agency-hero__design-layer--1">
+                                            <div class="agency-hero__design-element"></div>
+                                            <div class="agency-hero__design-element"></div>
+                                            <div class="agency-hero__design-element"></div>
+                                        </div>
+                                        <div class="agency-hero__design-layer agency-hero__design-layer--2">
+                                            <div class="agency-hero__design-component"></div>
+                                            <div class="agency-hero__design-component"></div>
+                                        </div>
+                                        <div class="agency-hero__design-layer agency-hero__design-layer--3">
+                                            <div class="agency-hero__design-interface"></div>
+                                        </div>
+                                    </div>
+                                    <div class="agency-hero__design-tools">
+                                        <div class="agency-hero__design-tool"></div>
+                                        <div class="agency-hero__design-tool"></div>
+                                        <div class="agency-hero__design-tool"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agency-hero__bg-gradient"></div>
+        </section>
+
+        <!-- Design Philosophy -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Our Design Philosophy</h2>
+                        <p class="agency-section__subtitle">We believe great design is about solving real problems for real people</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="agency-design-philosophy agency-fade-in">
+                            <div class="agency-design-philosophy__icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 010 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="agency-design-philosophy__title">Human-Centered</h3>
+                            <p class="agency-design-philosophy__description">We start with deep user research to understand needs, behaviors, and pain points before designing solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="agency-design-philosophy agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-design-philosophy__icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="agency-design-philosophy__title">Iterative</h3>
+                            <p class="agency-design-philosophy__description">We design, test, and refine through multiple iterations to ensure the best possible user experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="agency-design-philosophy agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-design-philosophy__icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                    <path d="M2 2l7.586 7.586"></path>
+                                    <circle cx="11" cy="11" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="agency-design-philosophy__title">Pixel-Perfect</h3>
+                            <p class="agency-design-philosophy__description">Attention to detail ensures every element is crafted with precision for visual excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Services -->
+        <section class="agency-section agency-section--light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Comprehensive Design Services</h2>
+                        <p class="agency-section__subtitle">End-to-end product design solutions from research to implementation</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="agency-design-service agency-fade-in">
+                            <div class="agency-design-service__header">
+                                <div class="agency-design-service__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 010 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-design-service__title">UX Research & Strategy</h3>
+                            </div>
+                            <div class="agency-design-service__body">
+                                <p>Deep dive into user needs, behaviors, and pain points to inform design decisions and product strategy.</p>
+                                <ul class="agency-design-service__activities">
+                                    <li>User interviews & surveys</li>
+                                    <li>Competitive analysis</li>
+                                    <li>User journey mapping</li>
+                                    <li>Persona development</li>
+                                    <li>Information architecture</li>
+                                </ul>
+                                <div class="agency-design-service__tools">
+                                    <span class="agency-design-service__tool-tag">UserTesting</span>
+                                    <span class="agency-design-service__tool-tag">Hotjar</span>
+                                    <span class="agency-design-service__tool-tag">Miro</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-design-service agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-design-service__header">
+                                <div class="agency-design-service__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-design-service__title">UI/UX Design</h3>
+                            </div>
+                            <div class="agency-design-service__body">
+                                <p>Beautiful, intuitive interfaces that provide seamless user experiences across all devices and platforms.</p>
+                                <ul class="agency-design-service__activities">
+                                    <li>Wireframing & prototyping</li>
+                                    <li>Visual design & styling</li>
+                                    <li>Interaction design</li>
+                                    <li>Mobile-first responsive design</li>
+                                    <li>Accessibility implementation</li>
+                                </ul>
+                                <div class="agency-design-service__tools">
+                                    <span class="agency-design-service__tool-tag">Figma</span>
+                                    <span class="agency-design-service__tool-tag">Sketch</span>
+                                    <span class="agency-design-service__tool-tag">Adobe XD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-design-service agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-design-service__header">
+                                <div class="agency-design-service__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-design-service__title">Design Systems</h3>
+                            </div>
+                            <div class="agency-design-service__body">
+                                <p>Scalable design systems that ensure consistency, efficiency, and brand cohesion across all products.</p>
+                                <ul class="agency-design-service__activities">
+                                    <li>Component library creation</li>
+                                    <li>Design token management</li>
+                                    <li>Style guide development</li>
+                                    <li>Documentation & governance</li>
+                                    <li>Implementation support</li>
+                                </ul>
+                                <div class="agency-design-service__tools">
+                                    <span class="agency-design-service__tool-tag">Storybook</span>
+                                    <span class="agency-design-service__tool-tag">Zeroheight</span>
+                                    <span class="agency-design-service__tool-tag">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="agency-design-service agency-fade-in" style="animation-delay: 300ms">
+                            <div class="agency-design-service__header">
+                                <div class="agency-design-service__icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="agency-design-service__title">Prototyping & Testing</h3>
+                            </div>
+                            <div class="agency-design-service__body">
+                                <p>Interactive prototypes and comprehensive user testing to validate designs before development.</p>
+                                <ul class="agency-design-service__activities">
+                                    <li>Interactive prototyping</li>
+                                    <li>Usability testing</li>
+                                    <li>A/B testing setup</li>
+                                    <li>User feedback collection</li>
+                                    <li>Analytics integration</li>
+                                </ul>
+                                <div class="agency-design-service__tools">
+                                    <span class="agency-design-service__tool-tag">InVision</span>
+                                    <span class="agency-design-service__tool-tag">ProtoPie</span>
+                                    <span class="agency-design-service__tool-tag">Lookback</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process -->
+        <section class="agency-section agency-section--dark" id="process">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Our Design Process</h2>
+                        <p class="agency-section__subtitle">A proven methodology that transforms ideas into exceptional user experiences</p>
+                    </div>
+                </div>
+                
+                <div class="agency-design-process">
+                    <div class="agency-design-process__phase agency-fade-in">
+                        <div class="agency-design-process__phase-number">
+                            <span>01</span>
+                        </div>
+                        <div class="agency-design-process__phase-content">
+                            <h3 class="agency-design-process__phase-title">Discover</h3>
+                            <p class="agency-design-process__phase-description">We start by understanding your business goals, target users, and market context through comprehensive research.</p>
+                            <div class="agency-design-process__phase-activities">
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Stakeholder interviews</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>User research & analysis</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Competitive analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-process__phase agency-fade-in" style="animation-delay: 100ms">
+                        <div class="agency-design-process__phase-number">
+                            <span>02</span>
+                        </div>
+                        <div class="agency-design-process__phase-content">
+                            <h3 class="agency-design-process__phase-title">Define</h3>
+                            <p class="agency-design-process__phase-description">We synthesize research findings to define user personas, journey maps, and product requirements.</p>
+                            <div class="agency-design-process__phase-activities">
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Persona development</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Journey mapping</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Information architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-process__phase agency-fade-in" style="animation-delay: 200ms">
+                        <div class="agency-design-process__phase-number">
+                            <span>03</span>
+                        </div>
+                        <div class="agency-design-process__phase-content">
+                            <h3 class="agency-design-process__phase-title">Design</h3>
+                            <p class="agency-design-process__phase-description">We create wireframes, visual designs, and interactive prototypes based on research insights.</p>
+                            <div class="agency-design-process__phase-activities">
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Wireframing & prototyping</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>UI design & styling</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Interaction design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-process__phase agency-fade-in" style="animation-delay: 300ms">
+                        <div class="agency-design-process__phase-number">
+                            <span>04</span>
+                        </div>
+                        <div class="agency-design-process__phase-content">
+                            <h3 class="agency-design-process__phase-title">Test</h3>
+                            <p class="agency-design-process__phase-description">We validate designs through user testing, gather feedback, and iterate based on real user insights.</p>
+                            <div class="agency-design-process__phase-activities">
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Usability testing</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>A/B testing</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Analytics & optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-process__phase agency-fade-in" style="animation-delay: 400ms">
+                        <div class="agency-design-process__phase-number">
+                            <span>05</span>
+                        </div>
+                        <div class="agency-design-process__phase-content">
+                            <h3 class="agency-design-process__phase-title">Deliver</h3>
+                            <p class="agency-design-process__phase-description">We provide comprehensive design handoff, documentation, and support for implementation.</p>
+                            <div class="agency-design-process__phase-activities">
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Design system delivery</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Developer handoff</span>
+                                </div>
+                                <div class="agency-design-process__activity">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                        <path d="M22 4L12 14.01l-3-3"/>
+                                    </svg>
+                                    <span>Quality assurance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design System Showcase -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Design System Excellence</h2>
+                        <p class="agency-section__subtitle">We create scalable design systems that ensure consistency and efficiency</p>
+                    </div>
+                </div>
+                
+                <div class="agency-design-system">
+                    <div class="agency-design-system__components agency-fade-in">
+                        <div class="agency-design-system__components-header">
+                            <h3 class="agency-design-system__components-title">Component Library</h3>
+                            <p class="agency-design-system__components-description">Reusable, accessible components built for consistency and scalability.</p>
+                        </div>
+                        <div class="agency-design-system__components-grid">
+                            <div class="agency-design-system__component">
+                                <div class="agency-design-system__component-preview"></div>
+                                <span class="agency-design-system__component-name">Buttons</span>
+                            </div>
+                            <div class="agency-design-system__component">
+                                <div class="agency-design-system__component-preview"></div>
+                                <span class="agency-design-system__component-name">Forms</span>
+                            </div>
+                            <div class="agency-design-system__component">
+                                <div class="agency-design-system__component-preview"></div>
+                                <span class="agency-design-system__component-name">Cards</span>
+                            </div>
+                            <div class="agency-design-system__component">
+                                <div class="agency-design-system__component-preview"></div>
+                                <span class="agency-design-system__component-name">Navigation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-system__benefits agency-fade-in" style="animation-delay: 100ms">
+                        <div class="agency-design-system__benefits-header">
+                            <h3 class="agency-design-system__benefits-title">Benefits</h3>
+                            <p class="agency-design-system__benefits-description">How design systems transform product development.</p>
+                        </div>
+                        <div class="agency-design-system__benefits-list">
+                            <div class="agency-design-system__benefit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                                <div>
+                                    <h4 class="agency-design-system__benefit-title">Consistency</h4>
+                                    <p class="agency-design-system__benefit-description">Uniform user experience across all products and platforms.</p>
+                                </div>
+                            </div>
+                            <div class="agency-design-system__benefit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                                <div>
+                                    <h4 class="agency-design-system__benefit-title">Efficiency</h4>
+                                    <p class="agency-design-system__benefit-description">Faster design and development with reusable components.</p>
+                                </div>
+                            </div>
+                            <div class="agency-design-system__benefit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                                <div>
+                                    <h4 class="agency-design-system__benefit-title">Scalability</h4>
+                                    <p class="agency-design-system__benefit-description">Easy to maintain and expand as products grow.</p>
+                                </div>
+                            </div>
+                            <div class="agency-design-system__benefit">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <path d="M22 4L12 14.01l-3-3"/>
+                                </svg>
+                                <div>
+                                    <h4 class="agency-design-system__benefit-title">Accessibility</h4>
+                                    <p class="agency-design-system__benefit-description">Built-in accessibility standards for all users.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Impact -->
+        <section class="agency-section agency-section--light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">The Impact of Great Design</h2>
+                        <p class="agency-section__subtitle">How strategic design drives measurable business results</p>
+                    </div>
+                </div>
+                
+                <div class="agency-design-impact">
+                    <div class="agency-design-impact__metric agency-fade-in">
+                        <div class="agency-design-impact__metric-value">
+                            <span class="agency-design-impact__metric-number" data-count="40">40%</span>
+                        </div>
+                        <div class="agency-design-impact__metric-content">
+                            <h3 class="agency-design-impact__metric-title">Increased User Engagement</h3>
+                            <p class="agency-design-impact__metric-description">Well-designed products see significantly higher user engagement and retention rates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-impact__metric agency-fade-in" style="animation-delay: 100ms">
+                        <div class="agency-design-impact__metric-value">
+                            <span class="agency-design-impact__metric-number" data-count="35">35%</span>
+                        </div>
+                        <div class="agency-design-impact__metric-content">
+                            <h3 class="agency-design-impact__metric-title">Higher Conversion Rates</h3>
+                            <p class="agency-design-impact__metric-description">Intuitive user experiences lead to improved conversion and reduced drop-off rates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-impact__metric agency-fade-in" style="animation-delay: 200ms">
+                        <div class="agency-design-impact__metric-value">
+                            <span class="agency-design-impact__metric-number" data-count="50">50%</span>
+                        </div>
+                        <div class="agency-design-impact__metric-content">
+                            <h3 class="agency-design-impact__metric-title">Reduced Development Time</h3>
+                            <p class="agency-design-impact__metric-description">Comprehensive design systems and specifications accelerate development cycles.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="agency-design-impact__metric agency-fade-in" style="animation-delay: 300ms">
+                        <div class="agency-design-impact__metric-value">
+                            <span class="agency-design-impact__metric-number" data-count="60">60%</span>
+                        </div>
+                        <div class="agency-design-impact__metric-content">
+                            <h3 class="agency-design-impact__metric-title">Lower Support Costs</h3>
+                            <p class="agency-design-impact__metric-description">Intuitive designs reduce user errors and support requests, lowering operational costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Case Studies -->
+        <section class="agency-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <h2 class="agency-section__title">Design Success Stories</h2>
+                        <p class="agency-section__subtitle">See how strategic design has transformed products and businesses</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="/case-studies.html" class="agency-link agency-link--primary">
+                            View all case studies
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 8H15M8 1L15 8L8 15"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="agency-design-case-study agency-fade-in">
+                            <div class="agency-design-case-study__preview">
+                                <div class="agency-design-case-study__before-after">
+                                    <div class="agency-design-case-study__before">
+                                        <div class="agency-design-case-study__label">Before</div>
+                                    </div>
+                                    <div class="agency-design-case-study__after">
+                                        <div class="agency-design-case-study__label">After</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="agency-design-case-study__content">
+                                <h3 class="agency-design-case-study__title">E-commerce Platform Redesign</h3>
+                                <p class="agency-design-case-study__description">Complete redesign of a fashion retail platform leading to 35% increase in conversions and improved user satisfaction.</p>
+                                <div class="agency-design-case-study__results">
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">35%</span>
+                                        <span class="agency-design-case-study__result-label">Conversion increase</span>
+                                    </div>
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">-28%</span>
+                                        <span class="agency-design-case-study__result-label">Bounce rate</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-design-case-study__link">
+                                    View case study
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="agency-design-case-study agency-fade-in" style="animation-delay: 100ms">
+                            <div class="agency-design-case-study__preview">
+                                <div class="agency-design-case-study__design-system">
+                                    <div class="agency-design-case-study__components">
+                                        <div class="agency-design-case-study__component"></div>
+                                        <div class="agency-design-case-study__component"></div>
+                                        <div class="agency-design-case-study__component"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="agency-design-case-study__content">
+                                <h3 class="agency-design-case-study__title">Enterprise Design System</h3>
+                                <p class="agency-design-case-study__description">Created a comprehensive design system for a financial services company, reducing design time by 60%.</p>
+                                <div class="agency-design-case-study__results">
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">60%</span>
+                                        <span class="agency-design-case-study__result-label">Faster design</span>
+                                    </div>
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">100%</span>
+                                        <span class="agency-design-case-study__result-label">Consistency</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-design-case-study__link">
+                                    View case study
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="agency-design-case-study agency-fade-in" style="animation-delay: 200ms">
+                            <div class="agency-design-case-study__preview">
+                                <div class="agency-design-case-study__mobile-app">
+                                    <div class="agency-design-case-study__app-screen">
+                                        <div class="agency-design-case-study__app-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="agency-design-case-study__content">
+                                <h3 class="agency-design-case-study__title">Healthcare Mobile App</h3>
+                                <p class="agency-design-case-study__description">Designed an intuitive telemedicine app that achieved 4.9★ rating and improved patient engagement.</p>
+                                <div class="agency-design-case-study__results">
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">4.9★</span>
+                                        <span class="agency-design-case-study__result-label">App rating</span>
+                                    </div>
+                                    <div class="agency-design-case-study__result">
+                                        <span class="agency-design-case-study__result-value">75%</span>
+                                        <span class="agency-design-case-study__result-label">Engagement increase</span>
+                                    </div>
+                                </div>
+                                <a href="/case-studies/case-study-template.html" class="agency-design-case-study__link">
+                                    View case study
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="agency-section agency-section--dark">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Product Design FAQs</h2>
+                        <p class="agency-section__subtitle">Common questions about our product design services</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="agency-faq">
+                            <div class="agency-faq__item agency-fade-in">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>What's the difference between UX and UI design?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>UX (User Experience) design focuses on the overall feel and functionality of a product, including user research, information architecture, and user flows. UI (User Interface) design focuses on the visual aspects - colors, typography, spacing, and interactive elements. Think of UX as the blueprint of a house (layout, flow) and UI as the interior design (colors, furniture). We provide both services, ensuring that beautiful interfaces (UI) are built on top of solid user experience foundations (UX).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 100ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>How long does a typical design project take?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>Project timelines vary based on complexity and scope. A simple website redesign might take 4-6 weeks, while a comprehensive product design with research, multiple platforms, and design system could take 8-16 weeks. During discovery, we provide a detailed timeline based on your specific requirements. We work in sprints (typically 2 weeks) with regular reviews and feedback sessions, allowing for adjustments and ensuring we're always aligned with your vision.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 200ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>What tools and software do you use?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>We use industry-standard tools including Figma for UI design and prototyping, Miro for collaborative workshops and research synthesis, Adobe Creative Suite for asset creation, Sketch for legacy projects, InVision for prototyping and user testing, UserTesting for remote usability testing, Hotjar for analytics and heatmaps, Storybook for design system documentation, and various accessibility testing tools. We're tool-agnostic and can work with whatever your team prefers or migrate to better solutions when needed.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="agency-faq__item agency-fade-in" style="animation-delay: 300ms">
+                                <button class="agency-faq__question" aria-expanded="false">
+                                    <span>Do you provide design system implementation support?</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </button>
+                                <div class="agency-faq__answer">
+                                    <p>Yes, we provide comprehensive design system implementation support including: detailed design specifications, component documentation in tools like Storybook, developer handoff with precise measurements and specs, accessibility guidelines and testing, implementation reviews and quality assurance, training sessions for your development team, ongoing maintenance and versioning support, and integration with your development workflow. We ensure that the design system is not just delivered but successfully adopted and maintained by your team.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="agency-section agency-section--cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="agency-section__title">Ready to Design Exceptional Products?</h2>
+                        <p class="agency-section__subtitle">Let's collaborate to create user experiences that drive engagement and business growth.</p>
+                        <div class="agency-cta__actions">
+                            <a href="/contact.html" class="agency-btn agency-btn--accent agency-btn--lg">
+                                Start Your Design Project
+                                <span class="agency-btn__icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 8H15M8 1L15 8L8 15"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#contact" class="agency-btn agency-btn--outline agency-btn--lg" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                                Book a Design Audit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agency-cta__bg-pattern"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="agency-footer" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="agency-footer__brand">
+                        <a href="/" class="agency-footer__logo">
+                            <span class="agency-footer__logo-text">ZAS</span>
+                            <span class="agency-footer__logo-text--accent">Digital</span>
+                        </a>
+                        <p class="agency-footer__description">We craft high-performance digital experiences for global enterprises and innovative startups.</p>
+                        <div class="agency-footer__social">
+                            <a href="https://linkedin.com/company/zasdigital" class="agency-footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/zasdigital" class="agency-footer__social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/zasdigital" class="agency-footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://dribbble.com/zasdigital" class="agency-footer__social-link" aria-label="Dribbble" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m-3.1-15.99c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-9.94 0-2.58.64-5.01 2.01-7.44 6.32"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Company</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/case-studies.html">Case Studies</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h3 class="agency-footer__heading">Services</h3>
+                    <ul class="agency-footer__links">
+                        <li><a href="/services/mobile-app-development.html">Mobile Apps</a></li>
+                        <li><a href="/services/web-app-development.html">Web Apps</a></li>
+                        <li><a href="/services/product-design.html">Product Design</a></li>
+                        <li><a href="/services/seo-growth.html">SEO & Growth</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="agency-footer__heading">Contact</h3>
+                    <address class="agency-footer__contact">
+                        <p class="agency-footer__contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:hello@zasdigital.in">hello@zasdigital.in</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </p>
+                        <p class="agency-footer__contact-item">
+                            <strong>Office</strong>
+                            <span>123 Tech Street, San Francisco, CA 94107</span>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="agency-footer__bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="agency-footer__copyright">© 2025 ZAS Digital. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="agency-footer__legal">
+                            <a href="/privacy-policy.html">Privacy Policy</a>
+                            <a href="/terms.html">Terms of Service</a>
+                            <a href="/cookies.html">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/services.js" defer></script>
+</body>
+</html>

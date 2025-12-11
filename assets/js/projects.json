@@ -1,0 +1,250 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Eflex Clean Energy System",
+      "category": "mobile-app",
+      "subCategory": "energy",
+      "client": "Andrew Winter, CEO Eflex",
+      "duration": "2020-present",
+      "description": "Intelligent energy management system for residential and commercial use, providing digital control over energy sources like utility, solar panels, and battery storage while optimizing energy use and protecting clean energy investments.",
+      "detailedDescription": "Eflex revolutionizes residential and commercial energy management by providing intelligent, digital control over all energy sources. The system optimizes usage of utility power, solar panels, and battery storage while saving energy and protecting clean energy investments. Our mobile app provides real-time monitoring, automated energy optimization, and simple control interfaces for homeowners and businesses.",
+      "techStack": ["C#", "TypeScript", "Node.js", "React Native", "PostgreSQL", "AWS", "Redis"],
+      "role": "Wireframe design, Figma prototyping, Mobile App Development, DevOps setup, Subscription Management",
+      "results": ["Ongoing client relationship", "Scalable architecture supporting thousands of users", "Energy optimization algorithms reducing consumption by 25%", "Real-time monitoring dashboard"],
+      "metrics": {
+        "users": "10,000+",
+        "uptime": "99.9%",
+        "energySavings": "25% average reduction",
+        "rating": "4.7★"
+      },
+      "images": ["eflex-1.jpg", "eflex-2.jpg", "eflex-3.jpg"],
+      "link": "/case-studies/eflex-energy.html",
+      "featured": true,
+      "year": 2020
+    },
+    {
+      "id": 2,
+      "name": "Maanavar - Blended Learning Platform",
+      "category": "web-app",
+      "subCategory": "education",
+      "client": "Internal Project (Founder)",
+      "duration": "2020-2021",
+      "description": "Social media-inspired blended learning system with voice chat features to keep students engaged while being easy to use for users new to computers or the internet.",
+      "detailedDescription": "Maanavar was an innovative ed-tech platform designed to address educational access challenges during COVID-19. Inspired by America's blended learning model, it featured social media-like engagement tools, voice chat capabilities, and an intuitive interface suitable for users with limited digital experience. The platform aimed to bridge the gap between traditional classroom learning and modern digital education.",
+      "techStack": ["C#", "ASP.NET", "Angular", "Microsoft SQL Server", "AWS", "Elasticsearch", "Apache Kafka", "SendGrid"],
+      "role": "Full-stack development from 0 to 100, UI/UX design, Architecture planning, Deployment and scaling",
+      "results": ["Successfully tested with 500+ students", "Innovative voice chat features for engagement", "Intuitive interface for digital beginners", "Lessons learned applied to future projects"],
+      "metrics": {
+        "students": "500+",
+        "engagement": "85%",
+        "satisfaction": "4.5★",
+        "features": "15+"
+      },
+      "images": ["maanavar-1.jpg", "maanavar-2.jpg"],
+      "link": "/case-studies/maanavar.html",
+      "featured": true,
+      "year": 2020
+    },
+    {
+      "id": 3,
+      "name": "Texas Children's Hospital Patient Portal",
+      "category": "web-app",
+      "subCategory": "healthcare",
+      "client": "Texas Children's Hospital",
+      "duration": "2018-2019",
+      "description": "Modernization of patient portal using Sitecore technology, providing secure access to appointments, medical records, and telehealth services.",
+      "detailedDescription": "Revamped the outdated patient portal for one of America's largest pediatric hospitals. Implemented modern Sitecore technology to provide patients with secure, intuitive access to medical appointments, health records, telehealth services, and communication tools with healthcare providers. The project focused on accessibility, security, and user experience for both patients and medical staff.",
+      "techStack": ["Sitecore", "ASP.NET", "SQL Server", "HTML5/CSS3", "JavaScript"],
+      "role": "Sitecore implementation, Frontend development, Integration with hospital systems, Security compliance",
+      "results": ["Modernized user interface with 40% better accessibility", "HIPAA-compliant security implementation", "Faster appointment scheduling (30% reduction in time)", "Improved patient satisfaction scores"],
+      "metrics": {
+        "users": "100,000+ patients",
+        "uptime": "99.95%",
+        "satisfaction": "4.6★",
+        "speed": "30% faster"
+      },
+      "images": ["tch-1.jpg", "tch-2.jpg"],
+      "link": "/case-studies/texas-childrens.html",
+      "featured": true,
+      "year": 2018
+    },
+    {
+      "id": 4,
+      "name": "The Chennai Silks E-commerce Platform",
+      "category": "web-app",
+      "subCategory": "ecommerce",
+      "client": "Vignesh, SCM Group Consultant",
+      "duration": "2022-2023",
+      "description": "Complete e-commerce solution for popular clothing retailer including website, mobile app, and integrated payment systems.",
+      "detailedDescription": "Developed a comprehensive e-commerce platform for one of South India's most popular clothing retailers. The solution included a responsive website, mobile application, inventory management system, payment gateway integration, and SEO optimization to drive online sales and enhance customer experience.",
+      "techStack": ["Sitecore", "ASP.NET", "React Native", "Amazon RDS", "AWS", "SendGrid", "Stripe/Payment Gateway"],
+      "role": "Wireframe design, Figma prototyping, Full website development, Mobile app development, Payment gateway integration, SEO implementation",
+      "results": ["35% increase in online sales within 6 months", "Mobile app with 4.8★ rating", "Improved website performance (PageSpeed 95+)", "Integrated inventory management system"],
+      "metrics": {
+        "salesIncrease": "35%",
+        "appRating": "4.8★",
+        "pageSpeed": "95+",
+        "mobileUsers": "65%"
+      },
+      "images": ["chennai-silks-1.jpg", "chennai-silks-2.jpg"],
+      "link": "/case-studies/chennai-silks.html",
+      "featured": true,
+      "year": 2022
+    },
+    {
+      "id": 5,
+      "name": "Recall Management System",
+      "category": "mobile-app",
+      "subCategory": "government",
+      "client": "Confidential (Minneapolis-based Startup)",
+      "duration": "2024-2025",
+      "description": "Mobile app that auto-fetches data from clients and government bodies, notifying customers about product recalls based on POS data or scanned bills.",
+      "detailedDescription": "Developed an intelligent recall management system that automatically fetches data from clients and government agencies to notify customers about product recalls. The system uses OCR technology to scan receipts, integrates with POS systems, and sends push notifications to affected customers, improving consumer safety and compliance.",
+      "techStack": ["Node.js (Express)", "React Native", "PostgreSQL", "Redis", "AWS Lambda", "Firebase Cloud Messaging", "OCR with ML"],
+      "role": "Data architecture, Wireframe design, Mobile app development, OCR implementation, Real-time notification system",
+      "results": ["Automated recall notifications reducing manual work by 80%", "OCR accuracy of 98% for receipt scanning", "Real-time government data integration", "Scalable architecture supporting millions of users"],
+      "metrics": {
+        "automation": "80% reduction",
+        "accuracy": "98% OCR",
+        "notifications": "Real-time",
+        "scalability": "Millions of users"
+      },
+      "images": ["recall-1.jpg", "recall-2.jpg"],
+      "link": "/case-studies/recall-management.html",
+      "featured": true,
+      "year": 2024
+    },
+    {
+      "id": 6,
+      "name": "Oliver Brown Restaurant POS",
+      "category": "web-app",
+      "subCategory": "restaurant",
+      "client": "Branding Manager, Oliver Brown Australia",
+      "duration": "2024",
+      "description": "Comprehensive point-of-sale system for restaurant chain including web dashboard and mobile ordering capabilities.",
+      "detailedDescription": "Developed a complete restaurant management system including web-based POS, mobile ordering, inventory management, and analytics dashboard for an Australian restaurant chain. The system streamlines operations, improves customer service, and provides real-time business insights.",
+      "techStack": ["C# / ASP.NET Core", "ASP.NET Core MVC", ".NET MAUI", "Microsoft SQL Server", "Azure", "Stripe Payment Gateway"],
+      "role": "System planning and architecture, UI/UX design, Full-stack development, Mobile system development, Cloud hosting setup",
+      "results": ["Reduced order processing time by 40%", "Integrated mobile ordering system", "Real-time inventory tracking", "Comprehensive analytics dashboard"],
+      "metrics": {
+        "processingTime": "40% reduction",
+        "orders": "1000+ daily",
+        "inventoryAccuracy": "99.5%",
+        "customerSatisfaction": "4.7★"
+      },
+      "images": ["oliver-brown-1.jpg", "oliver-brown-2.jpg"],
+      "link": "/case-studies/oliver-brown.html",
+      "featured": true,
+      "year": 2024
+    },
+    {
+      "id": 7,
+      "name": "Harbour Vessel Management System",
+      "category": "web-app",
+      "subCategory": "logistics",
+      "client": "Christopher (Logistics Company)",
+      "duration": "2023-2024",
+      "description": "Web application for managing vessel operations including freight, load handling, and document clearances.",
+      "detailedDescription": "Built a comprehensive vessel management system for harbor operations, handling freight management, load optimization, document processing, and clearance workflows. The system improves operational efficiency, reduces paperwork, and provides real-time tracking of vessel movements and cargo.",
+      "techStack": ["Node.js with ExpressJS", "Next.js", "React Native", "PostgreSQL", "Redis", "AWS EC2", "AWS S3", "Apache Kafka"],
+      "role": "UX/UI wireframing, Full web app development, DevOps setup, Real-time data processing, API integration",
+      "results": ["Reduced paperwork by 70% through digitization", "Real-time vessel tracking", "Automated document processing", "Improved load optimization algorithms"],
+      "metrics": {
+        "paperworkReduction": "70%",
+        "processingTime": "60% faster",
+        "accuracy": "99.8%",
+        "vesselsTracked": "50+ simultaneously"
+      },
+      "images": ["harbour-1.jpg", "harbour-2.jpg"],
+      "link": "/case-studies/harbour-vessel.html",
+      "featured": false,
+      "year": 2023
+    },
+    {
+      "id": 8,
+      "name": "Voice of India News Aggregator",
+      "category": "seo-growth",
+      "subCategory": "media",
+      "client": "Internal Project",
+      "duration": "2021-2022",
+      "description": "News aggregator website compiling popular news from various platforms into short, digestible summaries.",
+      "detailedDescription": "Developed a news aggregation platform that collects, categorizes, and summarizes news from multiple sources. Implemented SEO strategies to improve visibility, user engagement features, and a clean, responsive design optimized for both desktop and mobile users.",
+      "techStack": ["WordPress", "PHP", "HTML5/CSS3", "JavaScript", "Google Analytics", "SEMrush"],
+      "role": "Wireframe design, Figma prototyping, Website development, SEO strategy implementation, Performance optimization",
+      "results": ["Achieved 500,000+ monthly page views within 6 months", "Improved search rankings for 100+ keywords", "Mobile-responsive design with 95+ PageSpeed score", "Regular content updates maintaining user engagement"],
+      "metrics": {
+        "pageViews": "500,000+ monthly",
+        "keywords": "100+ ranked",
+        "pageSpeed": "95+",
+        "bounceRate": "35%"
+      },
+      "images": ["voice-india-1.jpg", "voice-india-2.jpg"],
+      "link": "/case-studies/voice-india.html",
+      "featured": false,
+      "year": 2021
+    },
+    {
+      "id": 9,
+      "name": "EduHire Teacher Recruitment Platform",
+      "category": "web-app",
+      "subCategory": "education",
+      "client": "Deepika, CEO Practills Learning (Co-founder)",
+      "duration": "2024-2025",
+      "description": "Co-founded recruitment platform connecting schools with qualified teachers through web and mobile applications.",
+      "detailedDescription": "Co-founded and developed a specialized recruitment platform focused on connecting educational institutions with qualified teachers. The platform includes advanced matching algorithms, video interview capabilities, credential verification, and scheduling tools specifically designed for the education sector.",
+      "techStack": ["HTML5", "CSS3", "React.js", "Node.js", "AWS", "WebRTC", "Stripe"],
+      "role": "Co-founder, System architecture, UI/UX design, Frontend development, Business strategy",
+      "results": ["Successfully matched 200+ teachers with schools", "Video interview integration reducing hiring time by 50%", "Credential verification system", "Platform serving multiple school districts"],
+      "metrics": {
+        "matches": "200+ successful",
+        "timeReduction": "50% faster hiring",
+        "schools": "50+ partner institutions",
+        "satisfaction": "4.8★"
+      },
+      "images": ["eduhire-1.jpg", "eduhire-2.jpg"],
+      "link": "/case-studies/eduhire.html",
+      "featured": false,
+      "year": 2024
+    },
+    {
+      "id": 10,
+      "name": "1vYou Data Visualization Platform",
+      "category": "web-app",
+      "subCategory": "analytics",
+      "client": "Samerfam, Dallas",
+      "duration": "2021",
+      "description": "Data mining platform allowing users to upload datasets, generate interactive graphs, and plot real-time maps.",
+      "detailedDescription": "Developed a comprehensive data visualization platform that enables users to upload various data formats, create interactive visualizations, generate insights through automated analysis, and plot geographical data on real-time maps. The platform serves researchers, analysts, and businesses needing to make data-driven decisions.",
+      "techStack": ["Python", "HTML5/CSS3", "Vue.js", "PostgreSQL", "D3.js", "Mapbox"],
+      "role": "Wireframe design, Figma prototyping, Full website development, Data visualization implementation, API development",
+      "results": ["Support for 10+ data formats", "Interactive visualization library with 20+ chart types", "Real-time map plotting capabilities", "User-friendly interface for non-technical users"],
+      "metrics": {
+        "dataFormats": "10+ supported",
+        "chartTypes": "20+",
+        "users": "1000+ registered",
+        "processingSpeed": "Real-time"
+      },
+      "images": ["1vyou-1.jpg", "1vyou-2.jpg"],
+      "link": "/case-studies/1vyou.html",
+      "featured": false,
+      "year": 2021
+    }
+  ],
+  
+  "categories": {
+    "web-app": "Web Applications",
+    "mobile-app": "Mobile Applications", 
+    "product-design": "Product Design",
+    "seo-growth": "SEO & Growth"
+  },
+  
+  "clients": [
+    "Texas Children's Hospital",
+    "Eflex",
+    "The Chennai Silks", 
+    "Oliver Brown Australia",
+    "Subaru",
+    "Emmovil"
+  ]
+}

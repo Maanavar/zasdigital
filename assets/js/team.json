@@ -1,0 +1,84 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Senthilkumar Sivaraman",
+      "role": "Managing Partner & CEO",
+      "bio": "Computer Science graduate with 10+ years of experience in software development and digital transformation. Founded ZAS Digital to bridge the gap between innovative ideas and exceptional digital execution. Passionate about creating technology solutions that drive measurable business growth.",
+      "expertise": ["Software Architecture", "Digital Strategy", "Project Management", "Client Relations"],
+      "experience": "10+ years",
+      "education": "BE in Computer Science & Engineering",
+      "avatar": "senthil.jpg",
+      "linkedin": "https://linkedin.com/in/senthilkumars",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "Kalpesh Vaza",
+      "role": "Managing Partner & CTO",
+      "bio": "Technology leader with 12+ years specializing in scalable architecture and emerging technologies. Leads our technical strategy, innovation initiatives, and ensures all solutions are built with technical excellence and future-proof architecture.",
+      "expertise": ["System Architecture", "Cloud Infrastructure", "DevOps", "AI/ML"],
+      "experience": "12+ years",
+      "education": "MS in Computer Science",
+      "avatar": "kalpesh.jpg",
+      "linkedin": "https://linkedin.com/in/kalpeshvaza",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "name": "Dinesh Kumar Marimuthu",
+      "role": "Managing Partner & COO",
+      "bio": "Operations expert with 15+ years in project delivery and team management. Ensures all projects are delivered on time, within budget, and exceed client expectations through efficient processes and quality assurance.",
+      "expertise": ["Operations Management", "Project Delivery", "Quality Assurance", "Process Optimization"],
+      "experience": "15+ years",
+      "education": "MBA in Operations",
+      "avatar": "dinesh.jpg",
+      "linkedin": "https://linkedin.com/in/dineshmarimuthu",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "name": "Gowtham Velu",
+      "role": "Managing Director North America",
+      "bio": "Business development leader with extensive experience in the North American market. Builds strategic partnerships and ensures our solutions meet the specific needs of clients across diverse industries in the region.",
+      "expertise": ["Business Development", "Strategic Partnerships", "Market Expansion", "Client Acquisition"],
+      "experience": "8+ years",
+      "education": "BS in Business Administration",
+      "avatar": "gowtham.jpg",
+      "linkedin": "https://linkedin.com/in/gowthamvelu",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "name": "Shurjith Narayan Chanthar Raju",
+      "role": "VP Sales, North America",
+      "bio": "Sales executive with proven track record in technology services. Develops and executes sales strategies to drive growth and build lasting client relationships across the North American market.",
+      "expertise": ["Sales Strategy", "Client Relationship Management", "Market Analysis", "Revenue Growth"],
+      "experience": "7+ years",
+      "education": "BS in Marketing",
+      "avatar": "shurjith.jpg",
+      "linkedin": "https://linkedin.com/in/shurjithraju",
+      "order": 5
+    },
+    {
+      "id": 6,
+      "name": "Rajkumar Ganesamoorthi",
+      "role": "VP Engineering & Delivery",
+      "bio": "Engineering leader with 14+ years overseeing complex technology projects. Manages our engineering teams to ensure technical excellence, timely delivery, and adherence to best practices across all development work.",
+      "expertise": ["Engineering Leadership", "Agile Methodologies", "Team Management", "Technical Delivery"],
+      "experience": "14+ years",
+      "education": "MS in Software Engineering",
+      "avatar": "rajkumar.jpg",
+      "linkedin": "https://linkedin.com/in/rajkumarg",
+      "order": 6
+    }
+  ],
+  
+  "stats": {
+    "teamSize": 12,
+    "projectsDelivered": 15,
+    "yearsExperience": 5,
+    "clientSatisfaction": "4.9★",
+    "projectSuccessRate": "99.9%"
+  }
+}
