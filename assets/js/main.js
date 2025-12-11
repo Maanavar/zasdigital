@@ -105,28 +105,30 @@
         const needsDynamicContent = document.querySelector('[data-needs-projects], [data-needs-team], [data-needs-testimonials]');
         
         if (needsDynamicContent && window.ZASData) {
-            ZASData.loadAllData().then(data => {
-                console.log('Dynamic content loaded:', data);
-                
-                // Update statistics if they exist on page
-                const statElements = document.querySelectorAll('[data-count]');
-                statElements.forEach(element => {
-                    const value = element.getAttribute('data-count');
-                    if (value) {
-                        // Trigger counter animation
-                        if (typeof initAnimatedCounters === 'function') {
-                            setTimeout(() => {
-                                element.textContent = value;
-                            }, 500);
+            // Check if data is already loaded
+            if (!ZASData.isLoaded && !ZASData.isLoading) {
+                ZASData.loadAllData().then(data => {
+                    console.log('Dynamic content loaded:', data);
+                    
+                    // Update statistics if they exist on page
+                    const statElements = document.querySelectorAll('[data-count]');
+                    statElements.forEach(element => {
+                        const value = element.getAttribute('data-count');
+                        if (value) {
+                            // Trigger counter animation
+                            if (typeof initAnimatedCounters === 'function') {
+                                setTimeout(() => {
+                                    element.textContent = value;
+                                }, 500);
+                            }
                         }
-                    }
+                    });
+                }).catch(error => {
+                    console.error('Failed to load dynamic content:', error);
                 });
-            }).catch(error => {
-                console.error('Failed to load dynamic content:', error);
-            });
+            }
         }
     }
-
 
     /**
      * NAVIGATION MODULE (FIXED)

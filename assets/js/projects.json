@@ -181,7 +181,7 @@
       },
       "images": ["voice-india-1.jpg", "voice-india-2.jpg"],
       "link": "/case-studies/voice-india.html",
-      "featured": false,
+      "featured": true,
       "year": 2021
     },
     {

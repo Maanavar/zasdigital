@@ -652,8 +652,8 @@
                         <p class="agency-section__subtitle">See how we've transformed businesses with custom web applications</p>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a href="/case-studies.html" class="agency-link agency-link--primary">
-                            View all case studies
+                        <a href="/case-studies.html?filter=web-app" class="agency-link agency-link--primary">
+                            View all web app case studies
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 8H15M8 1L15 8L8 15"/>
                             </svg>
@@ -661,79 +661,15 @@
                     </div>
                 </div>
                 
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="agency-web-case-study agency-fade-in">
-                            <div class="agency-web-case-study__image">
-                                <div class="agency-web-case-study__image-placeholder">
-                                    <div class="agency-web-case-study__image-text">Healthcare Management System</div>
-                                </div>
+                <!-- Dynamic Web App Projects Container -->
+                <div class="row g-4" id="webAppProjectsGrid" data-needs-projects data-service-category="web-app">
+                    <!-- Dynamic content will be inserted here -->
+                    <div class="col-12 text-center">
+                        <div class="agency-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading projects...</span>
                             </div>
-                            <div class="agency-web-case-study__content">
-                                <h3 class="agency-web-case-study__title">Healthcare SaaS Platform</h3>
-                                <p class="agency-web-case-study__description">Developed a HIPAA-compliant SaaS platform serving 200+ healthcare facilities with real-time patient management.</p>
-                                <div class="agency-web-case-study__tech">
-                                    <span class="agency-web-case-study__tech-tag">React</span>
-                                    <span class="agency-web-case-study__tech-tag">Node.js</span>
-                                    <span class="agency-web-case-study__tech-tag">AWS</span>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-web-case-study__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-web-case-study agency-fade-in" style="animation-delay: 100ms">
-                            <div class="agency-web-case-study__image">
-                                <div class="agency-web-case-study__image-placeholder">
-                                    <div class="agency-web-case-study__image-text">E-learning Platform</div>
-                                </div>
-                            </div>
-                            <div class="agency-web-case-study__content">
-                                <h3 class="agency-web-case-study__title">Enterprise E-Learning Platform</h3>
-                                <p class="agency-web-case-study__description">Built a scalable e-learning platform serving 50,000+ users with interactive courses and progress tracking.</p>
-                                <div class="agency-web-case-study__tech">
-                                    <span class="agency-web-case-study__tech-tag">Vue.js</span>
-                                    <span class="agency-web-case-study__tech-tag">Python</span>
-                                    <span class="agency-web-case-study__tech-tag">PostgreSQL</span>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-web-case-study__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-web-case-study agency-fade-in" style="animation-delay: 200ms">
-                            <div class="agency-web-case-study__image">
-                                <div class="agency-web-case-study__image-placeholder">
-                                    <div class="agency-web-case-study__image-text">FinTech Dashboard</div>
-                                </div>
-                            </div>
-                            <div class="agency-web-case-study__content">
-                                <h3 class="agency-web-case-study__title">Financial Analytics Dashboard</h3>
-                                <p class="agency-web-case-study__description">Created a real-time financial analytics dashboard processing millions of transactions with interactive visualizations.</p>
-                                <div class="agency-web-case-study__tech">
-                                    <span class="agency-web-case-study__tech-tag">Next.js</span>
-                                    <span class="agency-web-case-study__tech-tag">GraphQL</span>
-                                    <span class="agency-web-case-study__tech-tag">Docker</span>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-web-case-study__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
+                            <p class="mt-2">Loading web app projects...</p>
                         </div>
                     </div>
                 </div>
@@ -931,6 +867,8 @@
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/data-loader.js" defer></script>
+    <script src="/assets/js/service-projects.js" defer></script>
     <script src="/assets/js/services.js" defer></script>
 </body>
 </html>
