@@ -3,15 +3,27 @@
  * Modern 2025-2026 implementation with filtering, search, and smooth animations
  */
 
+// Wait for both DOM and dynamic content to load
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize case studies functionality
-    initCaseStudies();
+    // Check if we need to wait for dynamic content
+    if (document.getElementById('caseStudiesGrid').children.length === 0) {
+        // Wait for dynamic content to be loaded
+        document.addEventListener('zas:dataLoaded', () => {
+            setTimeout(() => {
+                initCaseStudies();
+                initAnimations();
+                initAccessibility();
+            }, 100); // Small delay to ensure rendering is complete
+        });
+    } else {
+        // Content already exists, initialize immediately
+        initCaseStudies();
+        initAnimations();
+        initAccessibility();
+    }
     
-    // Initialize animations
-    initAnimations();
-    
-    // Initialize accessibility features
-    initAccessibility();
+    // Initialize animations that don't depend on dynamic content
+    initStaticAnimations();
 });
 
 /**
@@ -19,20 +31,43 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function initCaseStudies() {
     const filterButtons = document.querySelectorAll('.agency-case-filter__item');
-    const caseStudies = document.querySelectorAll('[data-category]');
     const searchInput = document.getElementById('caseSearch');
     const loadMoreBtn = document.getElementById('loadMore');
+    
+    // ========== EFFICIENT FIX: Get ALL project containers ==========
+    // Store references to ALL project containers (including hidden ones)
+    const allProjectContainers = Array.from(document.querySelectorAll('.col-lg-4, .col-md-6'));
+    
+    // Filter out any empty containers (just in case)
+    const validContainers = allProjectContainers.filter(container => 
+        container.querySelector('.agency-case-study-grid')
+    );
+    
+    if (validContainers.length === 0) {
+        console.warn('No case studies found to filter. Waiting for dynamic content...');
+        return;
+    }
+    // ========== END EFFICIENT FIX ==========
     
     let currentFilter = 'all';
     let currentSearch = '';
     let visibleCount = 6;
-    const totalCount = caseStudies.length;
+    const totalCount = validContainers.length;
     
     // Filter functionality
     filterButtons.forEach(button => {
+        // Remove existing event listeners
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+    });
+    
+    // Re-select buttons after cloning
+    const refreshedButtons = document.querySelectorAll('.agency-case-filter__item');
+    
+    refreshedButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Update active state
-            filterButtons.forEach(btn => {
+            refreshedButtons.forEach(btn => {
                 btn.classList.remove('agency-case-filter__item--active');
                 btn.setAttribute('aria-selected', 'false');
             });
@@ -53,16 +88,23 @@ function initCaseStudies() {
     
     // Search functionality
     if (searchInput) {
+        // Remove existing event listeners
+        const newSearchInput = searchInput.cloneNode(true);
+        searchInput.parentNode.replaceChild(newSearchInput, searchInput);
+        
+        // Re-select
+        const refreshedSearchInput = document.getElementById('caseSearch');
+        
         // Debounced search function
         const performSearch = debounce(() => {
-            currentSearch = searchInput.value.toLowerCase().trim();
+            currentSearch = refreshedSearchInput.value.toLowerCase().trim();
             filterCaseStudies();
         }, 300);
         
-        searchInput.addEventListener('input', performSearch);
-        searchInput.addEventListener('keyup', (e) => {
+        refreshedSearchInput.addEventListener('input', performSearch);
+        refreshedSearchInput.addEventListener('keyup', (e) => {
             if (e.key === 'Escape') {
-                searchInput.value = '';
+                refreshedSearchInput.value = '';
                 currentSearch = '';
                 filterCaseStudies();
             }
@@ -71,16 +113,28 @@ function initCaseStudies() {
     
     // Load more functionality
     if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', () => {
+        // Remove existing event listeners
+        const newLoadMoreBtn = loadMoreBtn.cloneNode(true);
+        loadMoreBtn.parentNode.replaceChild(newLoadMoreBtn, loadMoreBtn);
+        
+        // Re-select
+        const refreshedLoadMoreBtn = document.getElementById('loadMore');
+        
+        refreshedLoadMoreBtn.addEventListener('click', () => {
             visibleCount = Math.min(visibleCount + 3, totalCount);
             filterCaseStudies(true);
             
             // Update button text or hide if all loaded
             if (visibleCount >= totalCount) {
-                loadMoreBtn.style.display = 'none';
+                refreshedLoadMoreBtn.style.display = 'none';
                 announceLoadComplete();
             }
         });
+        
+        // Initially hide load more if less than visible count
+        if (totalCount <= visibleCount) {
+            refreshedLoadMoreBtn.style.display = 'none';
+        }
     }
     
     /**
@@ -91,10 +145,18 @@ function initCaseStudies() {
         let visibleItems = 0;
         let hasResults = false;
         
-        caseStudies.forEach((caseStudy, index) => {
-            const category = caseStudy.dataset.category;
-            const title = caseStudy.querySelector('.agency-case-study-grid__title').textContent.toLowerCase();
-            const description = caseStudy.querySelector('.agency-case-study-grid__description').textContent.toLowerCase();
+        // ========== UPDATED: Loop through ALL containers ==========
+        validContainers.forEach((container, index) => {
+            const caseStudy = container.querySelector('.agency-case-study-grid');
+            if (!caseStudy) return;
+            
+            const parentDiv = caseStudy.closest('[data-category]');
+            const category = parentDiv ? parentDiv.getAttribute('data-category') : '';
+            const title = caseStudy.querySelector('.agency-case-study-grid__title')?.textContent.toLowerCase() || '';
+            const description = caseStudy.querySelector('.agency-case-study-grid__description')?.textContent.toLowerCase() || '';
+            const techTags = Array.from(caseStudy.querySelectorAll('.agency-case-study-grid__tech-tag'))
+                .map(tag => tag.textContent.toLowerCase())
+                .join(' ');
             
             // Check if case study matches filter
             const matchesFilter = currentFilter === 'all' || category === currentFilter;
@@ -103,33 +165,36 @@ function initCaseStudies() {
             const matchesSearch = !currentSearch || 
                 title.includes(currentSearch) || 
                 description.includes(currentSearch) ||
-                category.includes(currentSearch);
+                category.includes(currentSearch) ||
+                techTags.includes(currentSearch);
             
             // Determine visibility
             const shouldShow = matchesFilter && matchesSearch && 
                 (preserveVisible ? true : index < visibleCount);
             
             if (shouldShow) {
-                caseStudy.style.display = '';
+                container.style.display = '';
                 visibleItems++;
                 hasResults = true;
                 
-                // Add animation delay for staggered reveal
+                // Add animation for newly shown items
                 if (!preserveVisible) {
-                    caseStudy.style.animationDelay = `${(index % 3) * 100}ms`;
-                    caseStudy.classList.add('agency-fade-in');
+                    container.style.animationDelay = `${(index % 3) * 100}ms`;
+                    container.classList.add('agency-fade-in');
                 }
             } else {
-                caseStudy.style.display = 'none';
+                container.style.display = 'none';
             }
         });
+        // ========== END UPDATED ==========
         
         // Show/hide no results message
         showNoResultsMessage(!hasResults);
         
         // Update load more button visibility
-        if (loadMoreBtn) {
-            loadMoreBtn.style.display = hasResults && visibleItems < totalCount ? '' : 'none';
+        const refreshedLoadMoreBtn = document.getElementById('loadMore');
+        if (refreshedLoadMoreBtn) {
+            refreshedLoadMoreBtn.style.display = hasResults && visibleItems < totalCount ? '' : 'none';
         }
         
         // Update URL hash for filter state
@@ -142,12 +207,13 @@ function initCaseStudies() {
      */
     function showNoResultsMessage(show) {
         let noResults = document.getElementById('noResultsMessage');
+        const container = document.getElementById('caseStudiesGrid');
         
         if (show) {
             if (!noResults) {
                 noResults = document.createElement('div');
                 noResults.id = 'noResultsMessage';
-                noResults.className = 'agency-case-no-results';
+                noResults.className = 'agency-case-no-results col-12';
                 noResults.innerHTML = `
                     <div class="agency-case-no-results__icon">
                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -161,7 +227,7 @@ function initCaseStudies() {
                         Try adjusting your filter or search criteria to find what you're looking for.
                     </p>
                 `;
-                document.getElementById('caseStudiesGrid').appendChild(noResults);
+                container.appendChild(noResults);
             }
         } else if (noResults) {
             noResults.remove();
@@ -197,6 +263,7 @@ function initCaseStudies() {
         
         if (params.has('search')) {
             const search = params.get('search');
+            const searchInput = document.getElementById('caseSearch');
             if (searchInput) {
                 searchInput.value = search;
                 currentSearch = search.toLowerCase();
@@ -207,17 +274,20 @@ function initCaseStudies() {
     
     // Initialize from URL on page load
     initFromURL();
+    
+    // Initial filter
+    filterCaseStudies();
 }
 
 /**
- * Initialize animations and interactions
+ * Initialize static animations (those that don't depend on dynamic content)
  */
-function initAnimations() {
-    // Animate number counting
+function initStaticAnimations() {
+    // Animate number counting for static elements
+    const staticNumberElements = document.querySelectorAll('[data-count]:not(.agency-case-study-grid *)');
+    
     const animateNumbers = () => {
-        const numberElements = document.querySelectorAll('[data-count]');
-        
-        numberElements.forEach(element => {
+        staticNumberElements.forEach(element => {
             const target = parseInt(element.dataset.count);
             const suffix = element.textContent.replace(/\d+/g, '');
             const duration = 1500;
@@ -252,7 +322,47 @@ function initAnimations() {
         });
     };
     
-    // Initialize scroll animations
+    // Initialize when in view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateNumbers();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    const statsSection = document.querySelector('.agency-case-impact');
+    if (statsSection) {
+        observer.observe(statsSection);
+    }
+}
+
+/**
+ * Initialize animations and interactions for dynamic content
+ */
+function initAnimations() {
+    // Hover effects for case study cards
+    const initHoverEffects = () => {
+        const cards = document.querySelectorAll('.agency-case-study-grid');
+        
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.zIndex = '10';
+                card.style.transform = 'translateY(-4px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.zIndex = '';
+                card.style.transform = '';
+            });
+        });
+    };
+    
+    // Initialize hover effects
+    initHoverEffects();
+    
+    // Add scroll animations for newly loaded content
     const initScrollAnimations = () => {
         const observerOptions = {
             threshold: 0.1,
@@ -273,25 +383,7 @@ function initAnimations() {
         });
     };
     
-    // Hover effects for case study cards
-    const initHoverEffects = () => {
-        const cards = document.querySelectorAll('.agency-case-study-grid');
-        
-        cards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.zIndex = '10';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.zIndex = '';
-            });
-        });
-    };
-    
-    // Initialize all animations
-    animateNumbers();
     initScrollAnimations();
-    initHoverEffects();
 }
 
 /**
@@ -342,20 +434,24 @@ function initAccessibility() {
     }
     
     // Live region for announcements
-    const liveRegion = document.createElement('div');
-    liveRegion.className = 'agency-live-region';
-    liveRegion.setAttribute('aria-live', 'polite');
-    liveRegion.setAttribute('aria-atomic', 'true');
-    liveRegion.style.position = 'absolute';
-    liveRegion.style.width = '1px';
-    liveRegion.style.height = '1px';
-    liveRegion.style.padding = '0';
-    liveRegion.style.margin = '-1px';
-    liveRegion.style.overflow = 'hidden';
-    liveRegion.style.clip = 'rect(0, 0, 0, 0)';
-    liveRegion.style.whiteSpace = 'nowrap';
-    liveRegion.style.border = '0';
-    document.body.appendChild(liveRegion);
+    let liveRegion = document.getElementById('caseStudiesLiveRegion');
+    if (!liveRegion) {
+        liveRegion = document.createElement('div');
+        liveRegion.id = 'caseStudiesLiveRegion';
+        liveRegion.className = 'agency-live-region';
+        liveRegion.setAttribute('aria-live', 'polite');
+        liveRegion.setAttribute('aria-atomic', 'true');
+        liveRegion.style.position = 'absolute';
+        liveRegion.style.width = '1px';
+        liveRegion.style.height = '1px';
+        liveRegion.style.padding = '0';
+        liveRegion.style.margin = '-1px';
+        liveRegion.style.overflow = 'hidden';
+        liveRegion.style.clip = 'rect(0, 0, 0, 0)';
+        liveRegion.style.whiteSpace = 'nowrap';
+        liveRegion.style.border = '0';
+        document.body.appendChild(liveRegion);
+    }
     
     window.announceToScreenReader = (message) => {
         liveRegion.textContent = '';
@@ -407,28 +503,7 @@ function debounce(func, wait) {
     };
 }
 
-/**
- * Throttle function for performance
- * @param {Function} func - Function to throttle
- * @param {number} limit - Time limit in milliseconds
- * @returns {Function} Throttled function
- */
-function throttle(func, limit) {
-    let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
-}
-
-/**
- * Lazy load images
- */
+// Initialize lazy loading for any images in case studies
 function initLazyLoading() {
     if ('IntersectionObserver' in window) {
         const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -450,12 +525,9 @@ function initLazyLoading() {
     }
 }
 
-/**
- * Initialize view transitions (2025 feature)
- */
+// Initialize view transitions if supported
 function initViewTransitions() {
     if ('startViewTransition' in document) {
-        // Enhance filter transitions
         const filterButtons = document.querySelectorAll('.agency-case-filter__item');
         
         filterButtons.forEach(button => {
@@ -464,16 +536,13 @@ function initViewTransitions() {
                     return;
                 }
                 
-                // Start view transition
-                const transition = document.startViewTransition(() => {
-                    // The actual filter change happens here
+                const transition = document.startViewTransition(async () => {
+                    // Filtering will happen inside the transition
                 });
                 
                 try {
                     await transition.ready;
-                    // Optional: Add custom animations during transition
                 } catch (err) {
-                    // Fallback if transition fails
                     console.error('View transition failed:', err);
                 }
             });
@@ -481,17 +550,6 @@ function initViewTransitions() {
     }
 }
 
-// Initialize lazy loading
+// Initialize these features
 initLazyLoading();
-
-// Initialize view transitions if supported
 initViewTransitions();
-
-// Export for module usage if needed
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        initCaseStudies,
-        initAnimations,
-        initAccessibility
-    };
-}
