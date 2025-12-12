@@ -1,72 +1,55 @@
 /**
  * ZAS Digital - Service Projects Loader
- * Loads and displays projects for individual service pages
- * Version: 1.1.0 (Fixed)
+ * Loads projects for individual service pages
+ * Version: 2.0.0
  */
 
-(function() {
+import { Utils } from '../core/utils.js';
+import { DataLoader } from '../core/data-loader.js';
+import { EventBus } from '../core/events.js';
+
+export const ServiceProjects = (function() {
     'use strict';
     
-    // Wait for DOM and data to be ready
-    document.addEventListener('DOMContentLoaded', function() {
-        // Check if this is a service page that needs projects
-        const serviceContainers = document.querySelectorAll('[data-needs-projects]');
-        
+    /**
+     * Initialize service projects
+     */
+    function init() {
+        const serviceContainers = Utils.getElements('[data-needs-projects]');
         if (!serviceContainers.length) return;
         
-        // Use event listener instead of directly calling loadAllData
-        document.addEventListener('zas:dataLoaded', handleDataLoaded);
+        // Listen for data
+        EventBus.once('dataLoaded', renderServiceProjects);
         
-        // Also check if data is already loaded
-        setTimeout(() => {
-            if (window.ZASData && ZASData.isLoaded) {
-                handleDataLoaded();
-            } else {
-                // If data is not loaded after 1 second, show loading state
-                setTimeout(() => {
-                    if (!ZASData || !ZASData.isLoaded) {
-                        console.log('Waiting for data to load...');
-                    }
-                }, 1000);
-            }
-        }, 100);
-    });
-    
-    /**
-     * Handle data loaded event
-     */
-    function handleDataLoaded() {
-        if (!window.ZASData || !ZASData.isLoaded) {
-            console.error('ZASData not available');
-            showErrorMessages();
-            return;
+        // Load data if needed
+        if (!DataLoader.isLoaded && !DataLoader.isLoading) {
+            DataLoader.loadAllData();
         }
         
-        renderServiceProjects();
+        console.log('Service projects module initialized');
     }
     
     /**
-     * Render projects for service pages
+     * Render service projects
      */
     function renderServiceProjects() {
-        // Get all service containers that need projects
-        const serviceContainers = document.querySelectorAll('[data-needs-projects]');
+        const serviceContainers = Utils.getElements('[data-needs-projects]');
         
         serviceContainers.forEach(container => {
             const category = container.getAttribute('data-service-category');
             if (!category) return;
             
-            // Clear loading indicator
+            // Clear loading
             const loadingElement = container.querySelector('.agency-loading');
             if (loadingElement) {
                 loadingElement.remove();
             }
             
-            // Get projects filtered by category
-            const projects = ZASData.getProjects({ 
+            // Get projects
+            const projects = DataLoader.getProjects({ 
                 category: category,
                 featured: true,
-                limit: 3 // Show only 3 projects on service pages
+                limit: 3
             });
             
             if (projects.length === 0) {
@@ -74,10 +57,8 @@
                 return;
             }
             
-            // Clear container
+            // Clear and render
             container.innerHTML = '';
-            
-            // Render each project
             projects.forEach((project, index) => {
                 const html = createServiceProjectHTML(project, index);
                 container.innerHTML += html;
@@ -85,20 +66,27 @@
             
             // Add animations
             setTimeout(() => {
-                container.querySelectorAll('.agency-service-project-card').forEach((card, i) => {
+                Utils.getElements('.agency-case-study-grid', container).forEach((card, i) => {
                     card.style.animationDelay = `${i * 100}ms`;
-                    card.classList.add('agency-fade-in');
+                    Utils.addClass(card, 'agency-fade-in');
                 });
             }, 100);
         });
     }
     
-
     /**
      * Create HTML for a project on service page - USING CASE STUDY CLASSES
      */
     function createServiceProjectHTML(project, index) {
         const delay = (index % 3) * 100;
+        
+        // Format category name for display
+        const categoryDisplay = {
+            'web-app': 'Web App',
+            'mobile-app': 'Mobile App', 
+            'product-design': 'Product Design',
+            'seo-growth': 'SEO & Growth'
+        }[project.category] || project.category;
         
         // Get first 3 tech stack items
         const techTags = project.techStack && project.techStack.length > 0 
@@ -127,10 +115,7 @@
             <div class="col-lg-4">
                 <div class="agency-case-study-grid agency-fade-in" style="animation-delay: ${delay}ms" data-category="${project.category}">
                     <div class="agency-case-study-grid__header">
-                        <span class="agency-case-study-grid__category">${project.category === 'web-app' ? 'Web App' : 
-                        project.category === 'mobile-app' ? 'Mobile App' : 
-                        project.category === 'product-design' ? 'Product Design' : 
-                        'SEO & Growth'}</span>
+                        <span class="agency-case-study-grid__category">${categoryDisplay}</span>
                         <h3 class="agency-case-study-grid__title">${project.name}</h3>
                     </div>
                     <div class="agency-case-study-grid__image">
@@ -142,7 +127,7 @@
                         <p class="agency-case-study-grid__description">${project.description || 'No description available.'}</p>
                         ${techTags ? `<div class="agency-case-study-grid__tech">${techTags}</div>` : ''}
                         ${metricsHTML}
-                        <a href="${project.link || '#'}" class="agency-case-study-grid__link">
+                        <a href="${project.link || '/case-studies.html'}" class="agency-case-study-grid__link">
                             View case study
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 8H15M8 1L15 8L8 15"/>
@@ -169,16 +154,16 @@
         
         return `
             <div class="col-12">
-                <div class="agency-no-projects">
-                    <div class="agency-no-projects__icon">
+                <div class="agency-case-no-results">
+                    <div class="agency-case-no-results__icon">
                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10"/>
                             <line x1="12" y1="8" x2="12" y2="12"/>
                             <line x1="12" y1="16" x2="12.01" y2="16"/>
                         </svg>
                     </div>
-                    <h3 class="agency-no-projects__title">No ${name} projects yet</h3>
-                    <p class="agency-no-projects__description">
+                    <h3 class="agency-case-no-results__title">No ${name} projects yet</h3>
+                    <p class="agency-case-no-results__description">
                         Check back soon for our latest ${name} success stories, or 
                         <a href="/contact.html">contact us</a> to start your project.
                     </p>
@@ -187,32 +172,6 @@
         `;
     }
     
-    /**
-     * Show error messages if data fails to load
-     */
-    function showErrorMessages() {
-        const serviceContainers = document.querySelectorAll('[data-needs-projects]');
-        
-        serviceContainers.forEach(container => {
-            const loadingElement = container.querySelector('.agency-loading');
-            if (loadingElement) {
-                loadingElement.innerHTML = `
-                    <div class="agency-data-error">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="12" y1="8" x2="12" y2="12"/>
-                            <line x1="12" y1="16" x2="12.01" y2="16"/>
-                        </svg>
-                        <p class="mt-2">Unable to load projects. Please refresh the page.</p>
-                    </div>
-                `;
-            }
-        });
-    }
-    
-    /**
-     * Format metric labels for display
-     */
     function formatMetricLabel(key) {
         const labels = {
             'users': 'Users',
@@ -242,4 +201,23 @@
         return labels[key] || key;
     }
     
+    function getCategoryLabel(category) {
+        return category === 'web-app' ? 'Web App' : 
+               category === 'mobile-app' ? 'Mobile App' : 
+               category === 'product-design' ? 'Product Design' : 
+               'SEO & Growth';
+    }
+    
+    return {
+        init,
+        renderServiceProjects
+    };
 })();
+
+// Export for module usage
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = ServiceProjects;
+}
+
+// Make available globally
+window.ZASServiceProjects = ServiceProjects;
