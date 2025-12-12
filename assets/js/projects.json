@@ -15,7 +15,7 @@
       "metrics": {
         "users": "10,000+",
         "uptime": "99.9%",
-        "energySavings": "25% average reduction",
+        "energySavings": "25%",
         "rating": "4.7★"
       },
       "images": ["eflex-1.jpg", "eflex-2.jpg", "eflex-3.jpg"],
@@ -59,10 +59,10 @@
       "role": "Sitecore implementation, Frontend development, Integration with hospital systems, Security compliance",
       "results": ["Modernized user interface with 40% better accessibility", "HIPAA-compliant security implementation", "Faster appointment scheduling (30% reduction in time)", "Improved patient satisfaction scores"],
       "metrics": {
-        "users": "100,000+ patients",
+        "users": "100,000+",
         "uptime": "99.95%",
         "satisfaction": "4.6★",
-        "speed": "30% faster"
+        "speed": "30%"
       },
       "images": ["tch-1.jpg", "tch-2.jpg"],
       "link": "/case-studies/texas-childrens.html",
@@ -105,8 +105,8 @@
       "role": "Data architecture, Wireframe design, Mobile app development, OCR implementation, Real-time notification system",
       "results": ["Automated recall notifications reducing manual work by 80%", "OCR accuracy of 98% for receipt scanning", "Real-time government data integration", "Scalable architecture supporting millions of users"],
       "metrics": {
-        "automation": "80% reduction",
-        "accuracy": "98% OCR",
+        "automation": "80%",
+        "accuracy": "98%",
         "notifications": "Real-time",
         "scalability": "Millions of users"
       },
@@ -128,8 +128,8 @@
       "role": "System planning and architecture, UI/UX design, Full-stack development, Mobile system development, Cloud hosting setup",
       "results": ["Reduced order processing time by 40%", "Integrated mobile ordering system", "Real-time inventory tracking", "Comprehensive analytics dashboard"],
       "metrics": {
-        "processingTime": "40% reduction",
-        "orders": "1000+ daily",
+        "processingTime": "40%",
+        "orders": "1000+",
         "inventoryAccuracy": "99.5%",
         "customerSatisfaction": "4.7★"
       },
@@ -152,9 +152,9 @@
       "results": ["Reduced paperwork by 70% through digitization", "Real-time vessel tracking", "Automated document processing", "Improved load optimization algorithms"],
       "metrics": {
         "paperworkReduction": "70%",
-        "processingTime": "60% faster",
+        "processingTime": "60%",
         "accuracy": "99.8%",
-        "vesselsTracked": "50+ simultaneously"
+        "vesselsTracked": "50+"
       },
       "images": ["harbour-1.jpg", "harbour-2.jpg"],
       "link": "/case-studies/harbour-vessel.html",
@@ -174,8 +174,8 @@
       "role": "Wireframe design, Figma prototyping, Website development, SEO strategy implementation, Performance optimization",
       "results": ["Achieved 500,000+ monthly page views within 6 months", "Improved search rankings for 100+ keywords", "Mobile-responsive design with 95+ PageSpeed score", "Regular content updates maintaining user engagement"],
       "metrics": {
-        "pageViews": "500,000+ monthly",
-        "keywords": "100+ ranked",
+        "pageViews": "500,000+",
+        "keywords": "100+",
         "pageSpeed": "95+",
         "bounceRate": "35%"
       },
@@ -197,8 +197,8 @@
       "role": "Co-founder, System architecture, UI/UX design, Frontend development, Business strategy",
       "results": ["Successfully matched 200+ teachers with schools", "Video interview integration reducing hiring time by 50%", "Credential verification system", "Platform serving multiple school districts"],
       "metrics": {
-        "matches": "200+ successful",
-        "timeReduction": "50% faster hiring",
+        "matches": "200+",
+        "timeReduction": "50%",
         "schools": "50+ partner institutions",
         "satisfaction": "4.8★"
       },
@@ -220,9 +220,9 @@
       "role": "Wireframe design, Figma prototyping, Full website development, Data visualization implementation, API development",
       "results": ["Support for 10+ data formats", "Interactive visualization library with 20+ chart types", "Real-time map plotting capabilities", "User-friendly interface for non-technical users"],
       "metrics": {
-        "dataFormats": "10+ supported",
+        "dataFormats": "10+",
         "chartTypes": "20+",
-        "users": "1000+ registered",
+        "users": "1000+",
         "processingSpeed": "Real-time"
       },
       "images": ["1vyou-1.jpg", "1vyou-2.jpg"],
