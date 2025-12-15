@@ -128,16 +128,13 @@
                             <div class="agency-hero__stats">
                                 <div class="agency-hero__stat">
                                     <span class="agency-hero__stat-number" data-count="300">0</span>
-                                    <span class="agency-hero__stat-label">% Average Traffic Growth</span>
+                                    <span class="agency-hero__stat-label">% Traffic Growth</span>
                                 </div>
                                 <div class="agency-hero__stat">
                                     <span class="agency-hero__stat-number" data-count="85">85%</span>
                                     <span class="agency-hero__stat-label">Keyword Ranking Improvement</span>
                                 </div>
-                                <div class="agency-hero__stat">
-                                    <span class="agency-hero__stat-number" data-count="25">25%</span>
-                                    <span class="agency-hero__stat-label">Avg. Conversion Increase</span>
-                                </div>
+   
                             </div>
                             <div class="agency-hero__actions mt-4">
                                 <a href="/contact.html" class="agency-btn agency-btn--primary agency-btn--lg">
@@ -723,8 +720,8 @@
                         <p class="agency-section__subtitle">See how we've transformed businesses with strategic SEO</p>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a href="/case-studies.html" class="agency-link agency-link--primary">
-                            View all case studies
+                        <a href="/case-studies.html?filter=seo-growth" class="agency-link agency-link--primary">
+                            View all SEO case studies
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 8H15M8 1L15 8L8 15"/>
                             </svg>
@@ -732,73 +729,15 @@
                     </div>
                 </div>
                 
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="agency-seo-case-study agency-fade-in">
-                            <div class="agency-seo-case-study__header">
-                                <span class="agency-seo-case-study__category">E-commerce</span>
-                                <h3 class="agency-seo-case-study__title">Fashion Retail Growth</h3>
+                <!-- Dynamic SEO Projects Container -->
+                <div class="row g-4" id="seoProjectsGrid" data-needs-projects data-service-category="seo-growth">
+                    <!-- Dynamic content will be inserted here -->
+                    <div class="col-12 text-center">
+                        <div class="agency-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading projects...</span>
                             </div>
-                            <div class="agency-seo-case-study__content">
-                                <p>Increased organic traffic by 450% and improved conversion rate by 28% through comprehensive SEO strategy.</p>
-                                <div class="agency-seo-case-study__metrics">
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">450%</span>
-                                        <span class="agency-seo-case-study__metric-label">Traffic Growth</span>
-                                    </div>
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">28%</span>
-                                        <span class="agency-seo-case-study__metric-label">Conversion Rate</span>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/seo-fashion-retail.html" class="agency-seo-case-study__link">Read case study</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-seo-case-study agency-fade-in" style="animation-delay: 100ms">
-                            <div class="agency-seo-case-study__header">
-                                <span class="agency-seo-case-study__category">SaaS</span>
-                                <h3 class="agency-seo-case-study__title">B2B SaaS Lead Generation</h3>
-                            </div>
-                            <div class="agency-seo-case-study__content">
-                                <p>Generated 2,500+ qualified leads monthly through targeted content and technical SEO optimization.</p>
-                                <div class="agency-seo-case-study__metrics">
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">2.5K</span>
-                                        <span class="agency-seo-case-study__metric-label">Monthly Leads</span>
-                                    </div>
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">-60%</span>
-                                        <span class="agency-seo-case-study__metric-label">CPA Reduction</span>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/seo-saas-leads.html" class="agency-seo-case-study__link">Read case study</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-seo-case-study agency-fade-in" style="animation-delay: 200ms">
-                            <div class="agency-seo-case-study__header">
-                                <span class="agency-seo-case-study__category">Healthcare</span>
-                                <h3 class="agency-seo-case-study__title">Medical Practice Growth</h3>
-                            </div>
-                            <div class="agency-seo-case-study__content">
-                                <p>Improved local search visibility and increased patient appointments by 75% through local SEO strategy.</p>
-                                <div class="agency-seo-case-study__metrics">
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">75%</span>
-                                        <span class="agency-seo-case-study__metric-label">Appointment Growth</span>
-                                    </div>
-                                    <div class="agency-seo-case-study__metric">
-                                        <span class="agency-seo-case-study__metric-value">#1</span>
-                                        <span class="agency-seo-case-study__metric-label">Local Rankings</span>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/seo-healthcare.html" class="agency-seo-case-study__link">Read case study</a>
-                            </div>
+                            <p class="mt-2">Loading SEO projects...</p>
                         </div>
                     </div>
                 </div>
@@ -995,7 +934,6 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/js/services.js" defer></script>
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
 </html>

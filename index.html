@@ -57,8 +57,6 @@
 </head>
 <body>
     
-    
-    
     <!-- Navigation -->
     <header class="agency-header" id="mainHeader">
         <nav class="agency-nav" aria-label="Main navigation">
@@ -326,115 +324,15 @@
                     </div>
                 </div>
                 
-                <div class="row g-4">
-                    <div class="col-lg-4">
-                        <div class="agency-case-study-card agency-fade-in">
-                            <div class="agency-case-study-card__image">
-                                <div class="agency-case-study-card__placeholder">
-                                    <div class="agency-case-study-card__placeholder-text">FinTech Mobile App Dashboard</div>
-                                </div>
+                <!-- Dynamic Home Projects Container -->
+                <div class="row g-4" id="homeProjectsGrid" data-needs-projects data-random="3">
+                    <!-- Dynamic content will be inserted here -->
+                    <div class="col-12 text-center">
+                        <div class="agency-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading projects...</span>
                             </div>
-                            <div class="agency-case-study-card__content">
-                                <span class="agency-case-study-card__category">Mobile App Development</span>
-                                <h3 class="agency-case-study-card__title">Global Banking Platform</h3>
-                                <p class="agency-case-study-card__description">Built a secure mobile banking application serving 500,000+ users with 99.9% uptime.</p>
-                                <div class="agency-case-study-card__results">
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="40">40%</span>
-                                        <span class="agency-case-study-card__result-label">Faster transactions</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 85%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="4.8">4.8★</span>
-                                        <span class="agency-case-study-card__result-label">App Store rating</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 96%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-case-study-card__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-case-study-card agency-fade-in" style="animation-delay: 100ms">
-                            <div class="agency-case-study-card__image">
-                                <div class="agency-case-study-card__placeholder">
-                                    <div class="agency-case-study-card__placeholder-text">Healthcare SaaS Platform</div>
-                                </div>
-                            </div>
-                            <div class="agency-case-study-card__content">
-                                <span class="agency-case-study-card__category">Web App Development</span>
-                                <h3 class="agency-case-study-card__title">Healthcare Management System</h3>
-                                <p class="agency-case-study-card__description">Developed a HIPAA-compliant SaaS platform serving 200+ healthcare facilities nationwide.</p>
-                                <div class="agency-case-study-card__results">
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="75">75%</span>
-                                        <span class="agency-case-study-card__result-label">Process efficiency</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 75%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="3.2">3.2M</span>
-                                        <span class="agency-case-study-card__result-label">Monthly users</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 92%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-case-study-card__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="agency-case-study-card agency-fade-in" style="animation-delay: 200ms">
-                            <div class="agency-case-study-card__image">
-                                <div class="agency-case-study-card__placeholder">
-                                    <div class="agency-case-study-card__placeholder-text">E-commerce Redesign</div>
-                                </div>
-                            </div>
-                            <div class="agency-case-study-card__content">
-                                <span class="agency-case-study-card__category">Product Design</span>
-                                <h3 class="agency-case-study-card__title">Fashion Retail Platform</h3>
-                                <p class="agency-case-study-card__description">Redesigned user experience leading to significant improvements in conversion and retention.</p>
-                                <div class="agency-case-study-card__results">
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="35">35%</span>
-                                        <span class="agency-case-study-card__result-label">Conversion increase</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 70%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="agency-case-study-card__result">
-                                        <span class="agency-case-study-card__result-value" data-count="28">-28%</span>
-                                        <span class="agency-case-study-card__result-label">Bounce rate</span>
-                                        <div class="agency-case-study-card__chart">
-                                            <div class="agency-case-study-card__chart-fill" style="width: 72%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="/case-studies/case-study-template.html" class="agency-case-study-card__link">
-                                    View case study
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M1 8H15M8 1L15 8L8 15"/>
-                                    </svg>
-                                </a>
-                            </div>
+                            <p class="mt-2">Loading featured projects...</p>
                         </div>
                     </div>
                 </div>
@@ -451,63 +349,15 @@
                     </div>
                 </div>
                 
-                <div class="agency-testimonial-slider">
+                <!-- Dynamic Testimonials Container -->
+                <div class="agency-testimonial-slider" id="homeTestimonialsSlider" data-needs-testimonials>
                     <!-- Live region for screen readers -->
                     <div class="agency-testimonial-slider__live" id="testimonialLive" aria-live="polite" aria-atomic="true">
-                        Testimonial 1 of 3
+                        Loading testimonials...
                     </div>
                     
                     <div class="agency-testimonial-slider__track" id="testimonialTrack">
-                        <div class="agency-testimonial-slider__slide">
-                            <div class="agency-testimonial">
-                                <div class="agency-testimonial__content">
-                                    <p class="agency-testimonial__quote">"ZAS Digital transformed our mobile banking platform with exceptional attention to security and user experience. Their technical expertise and project management exceeded our expectations."</p>
-                                </div>
-                                <div class="agency-testimonial__author">
-                                    <div class="agency-testimonial__avatar">
-                                        <div class="agency-testimonial__avatar-placeholder">SR</div>
-                                    </div>
-                                    <div class="agency-testimonial__info">
-                                        <h4 class="agency-testimonial__name">Sarah Rodriguez</h4>
-                                        <p class="agency-testimonial__role">CTO, Global Finance Inc.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="agency-testimonial-slider__slide">
-                            <div class="agency-testimonial">
-                                <div class="agency-testimonial__content">
-                                    <p class="agency-testimonial__quote">"The SaaS platform they developed handles millions of transactions monthly with zero downtime. Their team's commitment to quality and scalability is remarkable."</p>
-                                </div>
-                                <div class="agency-testimonial__author">
-                                    <div class="agency-testimonial__avatar">
-                                        <div class="agency-testimonial__avatar-placeholder">MJ</div>
-                                    </div>
-                                    <div class="agency-testimonial__info">
-                                        <h4 class="agency-testimonial__name">Michael Johnson</h4>
-                                        <p class="agency-testimonial__role">CEO, HealthTech Solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="agency-testimonial-slider__slide">
-                            <div class="agency-testimonial">
-                                <div class="agency-testimonial__content">
-                                    <p class="agency-testimonial__quote">"Our conversion rates increased by 35% after implementing their design recommendations. The user research and testing process was thorough and data-driven."</p>
-                                </div>
-                                <div class="agency-testimonial__author">
-                                    <div class="agency-testimonial__avatar">
-                                        <div class="agency-testimonial__avatar-placeholder">EC</div>
-                                    </div>
-                                    <div class="agency-testimonial__info">
-                                        <h4 class="agency-testimonial__name">Elena Chen</h4>
-                                        <p class="agency-testimonial__role">Head of Product, StyleCart</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Content will be dynamically inserted -->
                     </div>
                     
                     <div class="agency-testimonial-slider__controls">
@@ -516,7 +366,9 @@
                                 <path d="M15 1L1 8L15 15"/>
                             </svg>
                         </button>
-                        <div class="agency-testimonial-slider__dots" id="testimonialDots"></div>
+                        <div class="agency-testimonial-slider__dots" id="testimonialDots">
+                            <!-- Dots will be dynamically inserted -->
+                        </div>
                         <button class="agency-testimonial-slider__next" id="testimonialNext" aria-label="Next testimonial">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M1 1L15 8L1 15"/>
@@ -653,7 +505,7 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js" defer></script>
+    <script type="module" src="/assets/js/main.js"></script>
     
     <!-- Analytics Placeholder (Loaded after consent) -->
     <!-- 

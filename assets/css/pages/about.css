@@ -24,7 +24,7 @@
 }
 
 .agency-hero__stat-number {
-  font-size: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+  font-size: clamp(1.5rem, 2rem + 2vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-heading);
   background: var(--gradient-primary);
