@@ -4,9 +4,11 @@
  * Version: 2.0.2
  */
 
+import { ScrollAnimations } from './modules/scroll-animations.js';
 import { Utils } from './core/utils.js';
 import { EventBus } from './core/events.js';
 import { ErrorHandler } from './core/error-handler.js';
+
 
 // Import modules (in production, these would be bundled)
 import { Navigation } from './modules/navigation.js';
@@ -90,6 +92,9 @@ import { ServiceProjects } from './pages/service-projects.js';
         ErrorHandler.safeExecute(Navigation.init);
         ErrorHandler.safeExecute(Theme.init);
         ErrorHandler.safeExecute(Utils.initSmoothScrolling);
+
+            // Initialize scroll animations - ADD THIS LINE
+        ErrorHandler.safeExecute(ScrollAnimations.init);
         
         // Initialize counters if needed
         if (document.querySelector('[data-count]')) {
@@ -164,7 +169,8 @@ import { ServiceProjects } from './pages/service-projects.js';
         forms: Forms,
         sliders: Sliders,
         counters: Counters,
-        faq: FAQ, // ← ADD THIS
+        faq: FAQ, 
+        scrollAnimations: ScrollAnimations,
         
         // Page modules
         home: HomePage,
@@ -189,18 +195,21 @@ import { ServiceProjects } from './pages/service-projects.js';
         },
         
         // Cleanup method
-        cleanup: function() {
-            // Clean up page modules
-            if (HomePage.cleanup) HomePage.cleanup();
-            if (AboutPage.cleanup) AboutPage.cleanup();
-            if (ServicesPage.cleanup) ServicesPage.cleanup();
-            if (CaseStudiesPage.cleanup) CaseStudiesPage.cleanup();
-            if (ContactPage.cleanup) ContactPage.cleanup();
-            if (ServiceProjects.cleanup) ServiceProjects.cleanup();
-            
-            // Clear any intervals or timeouts
-            EventBus.emit('cleanup');
-        }
+       cleanup: function() {
+        // Clean up page modules
+        if (HomePage.cleanup) HomePage.cleanup();
+        if (AboutPage.cleanup) AboutPage.cleanup();
+        if (ServicesPage.cleanup) ServicesPage.cleanup();
+        if (CaseStudiesPage.cleanup) CaseStudiesPage.cleanup();
+        if (ContactPage.cleanup) ContactPage.cleanup();
+        if (ServiceProjects.cleanup) ServiceProjects.cleanup();
+        
+        // Clean up scroll animations - ADD THIS
+        if (ScrollAnimations.cleanup) ScrollAnimations.cleanup();
+        
+        // Clear any intervals or timeouts
+        EventBus.emit('cleanup');
+    }
     };
     
     // Cleanup on page unload

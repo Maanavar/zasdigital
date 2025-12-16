@@ -285,10 +285,18 @@
         <!-- Case Studies Grid -->
         <section class="agency-section">
             <div class="container">
-                <div class="row g-4" id="caseStudiesGrid" data-render-projects="caseStudiesGrid" data-filters='{"featured": true}' data-template="grid">
+                <div class="row g-4" id="caseStudiesGrid" data-render-projects data-filters='{"featured": true}' data-template="grid">
                     <!-- Dynamic content will be inserted here -->
+                    <div class="col-12 text-center">
+                        <div class="agency-loading">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading case studies...</span>
+                            </div>
+                            <p class="mt-2">Loading case studies...</p>
+                        </div>
+                    </div>
                 </div>
-                
+                                
                 <!-- Load More Button -->
                 <div class="row mt-5">
                     <div class="col-12 text-center">
@@ -296,7 +304,7 @@
                             Load More Case Studies
                             <span class="agency-btn__icon">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M1 10H19M10 1L19 10L10 19"/>
+                                    <path d="M1 8H15M8 1L15 8L8 15"/>
                                 </svg>
                             </span>
                         </button>
@@ -318,7 +326,7 @@
                 <div class="agency-case-impact">
                     <div class="agency-case-impact__metric agency-fade-in">
                         <div class="agency-case-impact__value">
-                            <span class="agency-case-impact__number" data-count="250">0</span>
+                            <span class="agency-case-impact__number" data-count="15">0</span>
                         </div>
                         <div class="agency-case-impact__content">
                             <h3 class="agency-case-impact__title">Projects Delivered</h3>
