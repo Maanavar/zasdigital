@@ -1421,3 +1421,62 @@
     gap: var(--space-lg);
   }
 }
+
+
+/* ============================================
+   SCROLL ANIMATIONS (Option 2 - Intersection Observer)
+   ============================================ */
+
+/* Base animation states */
+.agency-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agency-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.agency-slide-in-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agency-slide-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation delay helpers */
+[data-animation-delay="100"] { transition-delay: 100ms !important; }
+[data-animation-delay="200"] { transition-delay: 200ms !important; }
+[data-animation-delay="300"] { transition-delay: 300ms !important; }
+[data-animation-delay="400"] { transition-delay: 400ms !important; }
+[data-animation-delay="500"] { transition-delay: 500ms !important; }
+
+/* Initial load animation (for above-the-fold content) */
+.agency-hero .agency-fade-in,
+.agency-hero .agency-slide-in-up {
+  animation: none !important; /* Let JS handle it */
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .agency-fade-in,
+  .agency-slide-in-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .agency-fade-in.visible,
+  .agency-slide-in-up.visible {
+    /* Already visible if reduced motion */
+  }
+}
